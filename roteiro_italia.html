@@ -13,7 +13,7 @@
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:var(--bg);color:var(--text);font-family:Georgia,serif;min-height:100vh}
 header{background:linear-gradient(160deg,#0a0a10 0%,#141c10 40%,#0a0a10 100%);border-bottom:1px solid var(--border);padding:2.5rem 2rem 2rem;text-align:center;position:relative;overflow:hidden}
-header::before{content:"ðŸ‡®ðŸ‡¹";font-size:8rem;position:absolute;opacity:.05;top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none}
+header::before{content:"🇮🇹";font-size:8rem;position:absolute;opacity:.05;top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none}
 header h1{font-size:clamp(1.8rem,4vw,2.6rem);font-weight:400;letter-spacing:.1em;color:var(--gold);text-transform:uppercase;margin-bottom:.3rem;position:relative}
 header .sub{font-size:.85rem;color:var(--muted);letter-spacing:.2em;font-family:Arial,sans-serif;text-transform:uppercase;position:relative}
 nav{display:flex;gap:0;overflow-x:auto;background:var(--surface2);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100;scrollbar-width:none}
@@ -46,7 +46,7 @@ main{max-width:960px;margin:0 auto;padding:2rem 1rem 4rem}
 .note{display:block;font-size:.73rem;color:var(--muted);margin-top:.15rem;font-family:Arial,sans-serif;font-style:italic}
 a.map-link{display:inline-flex;align-items:center;gap:.3rem;font-size:.7rem;color:var(--green);text-decoration:none;font-family:Arial,sans-serif;border:1px solid var(--green);border-radius:100px;padding:.15rem .55rem;margin:.25rem .3rem 0 0;transition:background .2s}
 a.map-link:hover{background:rgba(124,158,110,.12)}
-a.map-link::before{content:"ðŸ“";font-size:.65rem}
+a.map-link::before{content:"📍";font-size:.65rem}
 a.pdf-btn{display:inline-flex;align-items:center;gap:.3rem;font-size:.7rem;color:var(--red);text-decoration:none;font-family:Arial,sans-serif;border:1px solid var(--red);border-radius:100px;padding:.15rem .55rem;margin:.25rem .3rem 0 0;transition:background .2s}
 a.pdf-btn:hover{background:rgba(184,92,92,.12)}
 .info-box{background:var(--surface2);border:1px solid var(--border);border-left:3px solid var(--gold);border-radius:var(--rs);padding:.8rem 1rem;margin:.6rem 0;font-size:.8rem;font-family:Arial,sans-serif;line-height:1.6;color:var(--text)}
@@ -107,44 +107,44 @@ footer{text-align:center;padding:2rem;color:var(--muted);font-size:.7rem;font-fa
   <div class="sub">14 a 27 de Novembro &nbsp;·&nbsp; 6 adultos + Maya (5 anos)</div>
 </header>
 <nav>
-  <button class="active" onclick="show('voo',this)">âœˆï¸ Passagens</button>
-  <button onclick="show('roma',this)">ðŸ›ï¸ Roma</button>
-  <button onclick="show('milao',this)">ðŸ™ï¸ Milao</button>
-  <button onclick="show('veneza',this)">ðŸš¢ Veneza</button>
-  <button onclick="show('florenca',this)">ðŸŒ¸ Florenca</button>
-  <button onclick="show('ingressos',this)">ðŸŽŸï¸ Ingressos</button>
-  <button onclick="show('restaurantes',this)">ðŸ Restaurantes</button>
-  <button onclick="show('lanches',this)">ðŸ• Lanches e Lojas</button>
-  <button onclick="show('atm',this)">ðŸ’³ Wise ATM</button>
-  <button onclick="show('docs',this)">ðŸ“„ Documentos</button>
+  <button class="active" onclick="show('voo',this)">✈️ Passagens</button>
+  <button onclick="show('roma',this)">🏛️ Roma</button>
+  <button onclick="show('milao',this)">🏙️ Milao</button>
+  <button onclick="show('veneza',this)">🚢 Veneza</button>
+  <button onclick="show('florenca',this)">🌸 Florenca</button>
+  <button onclick="show('ingressos',this)">🎟️ Ingressos</button>
+  <button onclick="show('restaurantes',this)">🍝 Restaurantes</button>
+  <button onclick="show('lanches',this)">🍕 Lanches e Lojas</button>
+  <button onclick="show('atm',this)">💳 Wise ATM</button>
+  <button onclick="show('docs',this)">📄 Documentos</button>
 </nav>
 <main>
 
 <div id="voo" class="section active">
   <div class="city-header">
-    <div class="city-emoji">âœˆï¸</div>
-    <div><h2>Passagens</h2><div class="dates">Ida 14/11 (Sab) â€” Volta 27/11 (Sex)</div></div>
+    <div class="city-emoji">✈️</div>
+    <div><h2>Passagens</h2><div class="dates">Ida 14/11 (Sab) — Volta 27/11 (Sex)</div></div>
   </div>
 
-  <div class="divider">IDA â€” 14/11 (Sabado)</div>
+  <div class="divider">IDA — 14/11 (Sabado)</div>
   <div class="voo-leg">
     <div class="voo-rota">Rio de Janeiro (SDU) → Roma Fiumicino (FCO)</div>
-    <div class="voo-step"><div class="voo-time">11:00</div><div class="voo-info">Rio de Janeiro â€” Santos Dumont (SDU)<small>Embarque no Santos Dumont, nao Galeao</small></div></div>
-    <div class="voo-step"><div class="voo-time">12:05</div><div class="voo-info">Sao Paulo â€” Congonhas (CGH) · GOL G3 1017 · Boeing 737-700<small>Chegar 1h05min depois em Congonhas</small></div></div>
-    <div class="voo-transfer">âš ï¸ Mudanca de aeroporto em Sao Paulo: Congonhas (CGH) → Guarulhos (GRU) · 3h 40min de transfer</div>
-    <div class="voo-step"><div class="voo-time">15:45</div><div class="voo-info">Sao Paulo â€” Guarulhos International (GRU) · Terminal 3<small>Aeroporto diferente do voo anterior</small></div></div>
-    <div class="voo-step"><div class="voo-time">06:40+1</div><div class="voo-info">Roma â€” Fiumicino (FCO) · Terminal 3 · ITA Airways AZ 675 · Airbus A350-900<small>Chega em 15/11 (domingo), duracao total: 15h 40min</small></div></div>
+    <div class="voo-step"><div class="voo-time">11:00</div><div class="voo-info">Rio de Janeiro — Santos Dumont (SDU)<small>Embarque no Santos Dumont, nao Galeao</small></div></div>
+    <div class="voo-step"><div class="voo-time">12:05</div><div class="voo-info">Sao Paulo — Congonhas (CGH) · GOL G3 1017 · Boeing 737-700<small>Chegar 1h05min depois em Congonhas</small></div></div>
+    <div class="voo-transfer">⚠️ Mudanca de aeroporto em Sao Paulo: Congonhas (CGH) → Guarulhos (GRU) · 3h 40min de transfer</div>
+    <div class="voo-step"><div class="voo-time">15:45</div><div class="voo-info">Sao Paulo — Guarulhos International (GRU) · Terminal 3<small>Aeroporto diferente do voo anterior</small></div></div>
+    <div class="voo-step"><div class="voo-time">06:40+1</div><div class="voo-info">Roma — Fiumicino (FCO) · Terminal 3 · ITA Airways AZ 675 · Airbus A350-900<small>Chega em 15/11 (domingo), duracao total: 15h 40min</small></div></div>
   </div>
   <div class="info-box warn">Refeicao incluida no trecho GRU-FCO (ITA Airways). Economia Light.</div>
 
-  <div class="divider">VOLTA â€” 27/11 (Sexta)</div>
+  <div class="divider">VOLTA — 27/11 (Sexta)</div>
   <div class="voo-leg">
     <div class="voo-rota">Roma Fiumicino (FCO) → Rio de Janeiro (GIG)</div>
-    <div class="voo-step"><div class="voo-time">10:35</div><div class="voo-info">Roma â€” Fiumicino (FCO) · Terminal 1<small>Chegar 3h antes: as 07:35</small></div></div>
-    <div class="voo-step"><div class="voo-time">18:40</div><div class="voo-info">Sao Paulo â€” Guarulhos (GRU) · Terminal 3 · ITA Airways AZ 678 · Airbus A350-900<small>Duracao: 12h 05min</small></div></div>
+    <div class="voo-step"><div class="voo-time">10:35</div><div class="voo-info">Roma — Fiumicino (FCO) · Terminal 1<small>Chegar 3h antes: as 07:35</small></div></div>
+    <div class="voo-step"><div class="voo-time">18:40</div><div class="voo-info">Sao Paulo — Guarulhos (GRU) · Terminal 3 · ITA Airways AZ 678 · Airbus A350-900<small>Duracao: 12h 05min</small></div></div>
     <div class="voo-transfer">Transfer em Guarulhos: Terminal 3 → Terminal 2 · 3h 25min · Atencao: mudanca de terminal</div>
-    <div class="voo-step"><div class="voo-time">22:05</div><div class="voo-info">Sao Paulo â€” Guarulhos (GRU) · Terminal 2</div></div>
-    <div class="voo-step"><div class="voo-time">23:10</div><div class="voo-info">Rio de Janeiro â€” Galeao A.C. Jobim (GIG) · Terminal 2 · GOL G3 1380 · Boeing 737 MAX 8<small>Duracao total volta: 16h 35min</small></div></div>
+    <div class="voo-step"><div class="voo-time">22:05</div><div class="voo-info">Sao Paulo — Guarulhos (GRU) · Terminal 2</div></div>
+    <div class="voo-step"><div class="voo-time">23:10</div><div class="voo-info">Rio de Janeiro — Galeao A.C. Jobim (GIG) · Terminal 2 · GOL G3 1380 · Boeing 737 MAX 8<small>Duracao total volta: 16h 35min</small></div></div>
   </div>
   <div class="info-box">Economia Light. Duracao total da volta: 16h 35min.</div>
 
@@ -155,13 +155,13 @@ footer{text-align:center;padding:2rem;color:var(--muted);font-size:.7rem;font-fa
     <div class="voo-step"><div class="voo-time">13:15</div><div class="voo-info">Milano Centrale</div></div>
   </div>
   <div class="voo-leg">
-    <div class="voo-rota">Milao → Veneza · 20/11 (Qui)</div>
+    <div class="voo-rota">Milao → Veneza · 20/11 (Sex)</div>
     <div class="voo-step"><div class="voo-time">12:35</div><div class="voo-info">Milano Centrale · Trem Italo 8983 · Vagao 4 · Cod. YYUJJY<small>Driellen / Fabricio / Antonio (assentos 76-78)</small></div></div>
     <div class="voo-step"><div class="voo-time">15:03</div><div class="voo-info">Venezia Santa Lucia</div></div>
-    <div style="margin-top:.6rem"><a class="pdf-btn" href="pdfs/trem_milao_veneza_1.pdf" target="_blank">ðŸŽ« Passagem Driellen/Fabricio/Antonio</a><a class="pdf-btn" href="pdfs/trem_milao_veneza_2.pdf" target="_blank">ðŸŽ« Passagem Suellen/Marcia/Maya</a></div>
+    <div style="margin-top:.6rem"><a class="pdf-btn" href="pdfs/trem_milao_veneza_1.pdf" target="_blank">🎫 Passagem Driellen/Fabricio/Antonio</a><a class="pdf-btn" href="pdfs/trem_milao_veneza_2.pdf" target="_blank">🎫 Passagem Suellen/Marcia/Maya</a></div>
   </div>
   <div class="voo-leg">
-    <div class="voo-rota">Veneza → Florença · 23/11 (Ter)</div>
+    <div class="voo-rota">Veneza → Florença · 23/11 (Seg)</div>
     <div class="voo-step"><div class="voo-time">11:05</div><div class="voo-info">Venezia Santa Lucia · Italo 8911 → Firenze S.M. · Chega 13:20<br><small>Vagão 4 · Driellen (ass.1), Fabrício (ass.2), Marcia (ass.3), Antonio (ass.4) · Cod. GCLMWC</small></div></div>
     <div class="voo-step"><div class="voo-time">13:20</div><div class="voo-info">Firenze Santa Maria Novella</div></div>
   </div>
@@ -169,84 +169,100 @@ footer{text-align:center;padding:2rem;color:var(--muted);font-size:.7rem;font-fa
     <div class="voo-rota">Florenca → Roma · 26/11 (Qui)</div>
     <div class="voo-step"><div class="voo-time">09:03</div><div class="voo-info">Firenze S.M. · Trem Italo 8951 · Vagao 4 · Cod. X8K4QR<small>Driellen / Fabricio / Marcia / Antonio (assentos 5-8)</small></div></div>
     <div class="voo-step"><div class="voo-time">10:40</div><div class="voo-info">Roma Termini</div></div>
-    <div style="margin-top:.6rem"><a class="pdf-btn" href="pdfs/trem_florenca_roma_1.pdf" target="_blank">ðŸŽ« Passagem Driellen/Fabricio/Marcia/Antonio</a></div>
+    <div style="margin-top:.6rem"><a class="pdf-btn" href="pdfs/trem_florenca_roma_1.pdf" target="_blank">🎫 Passagem Driellen/Fabricio/Marcia/Antonio</a></div>
   </div>
 
-  <div class="divider">Hotel â€” Noite de partida 26/11</div>
+  <div class="divider">Hotel — Noite de partida 26/11</div>
   <div class="hotel-card" style="margin:0">
     <div class="hotel-name">Raeli Hotel Lazio</div>
     <div class="hotel-meta">
-      ðŸ“ Via Vicenza 8, Estacao Termini â€” Roma<br>
-      ðŸ“ž <span>+39 06 445 6214</span><br>
-      ðŸ—“ï¸ <span>26/11 (entrada 14h) → 27/11 (saida ate 11h)</span><br>
-      ðŸ”– <span>Confirmacao: 5920.765.054 &nbsp;|&nbsp; PIN: 1507</span>
+      📍 Via Vicenza 8, Estacao Termini — Roma<br>
+      📞 <span>+39 06 445 6214</span><br>
+      🗓️ <span>26/11 (entrada 14h) → 27/11 (saida ate 11h)</span><br>
+      🔖 <span>Confirmacao: 5920.765.054 &nbsp;|&nbsp; PIN: 1507</span>
     </div>
     <div style="margin-top:.6rem">
       <a class="map-link" href="https://maps.app.goo.gl/xWrMoqjf1a4vAbBx8" target="_blank">Ver no Maps</a>
-      <a class="pdf-btn" href="pdfs/hotel_roma_raeli.pdf" target="_blank">ðŸ“‹ Booking Raeli Hotel</a>
+      <a class="pdf-btn" href="pdfs/hotel_roma_raeli.pdf" target="_blank">📋 Booking Raeli Hotel</a>
     </div>
   </div>
 </div>
 
 <div id="roma" class="section">
   <div class="city-header">
-    <div class="city-emoji">ðŸ›ï¸</div>
+    <div class="city-emoji">🏛️</div>
     <div><h2>Roma</h2><div class="dates">15 a 18 de Novembro</div></div>
   </div>
   <div class="hotel-card">
-    <div class="hotel-name">Rome As You Feel â€” Navona Harmony Apartment</div>
+    <div class="hotel-name">Rome As You Feel — Navona Harmony Apartment</div>
     <div class="hotel-meta">
-      ðŸ“ Via degli Spagnoli 41, Pantheon â€” Roma<br>
-      ðŸ“ž <span>+39 06 4554 3820</span><br>
-      ðŸ—“ï¸ <span>Check-in: 15/11 (15h-22h) | Check-out: 18/11 (ate 11h)</span><br>
-      ðŸ‘¥ <span>5 adultos + Maya (5 anos)</span>
+      📍 Via degli Spagnoli 41, Pantheon — Roma<br>
+      📞 <span>+39 06 4554 3820</span><br>
+      🗓️ <span>Check-in: 15/11 (15h-22h) | Check-out: 18/11 (ate 11h)</span><br>
+      👥 <span>5 adultos + Maya (5 anos)</span>
     </div>
     <div style="margin-top:.6rem">
       <a class="map-link" href="https://maps.app.goo.gl/3Ld56p5MVjG7LiB38" target="_blank">Ver no Maps</a>
-      <a class="pdf-btn" href="pdfs/hotel_roma_navona.pdf" target="_blank">ðŸ“‹ Booking Roma â€” Navona</a>
+      <a class="pdf-btn" href="pdfs/hotel_roma_navona.pdf" target="_blank">📋 Booking Roma — Navona</a>
     </div>
   </div>
   <div class="photo-grid"><div><img src="https://images.unsplash.com/photo-1552832230-c0197DD89012?w=400&q=70" alt="Coliseu" style="width:100%;height:110px;object-fit:cover;border-radius:7px;border:1px solid #32323e;background:#1e1e26" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjExMHB4IiBzdHlsZT0iYmFja2dyb3VuZDojMWUxZTI2O2Rpc3BsYXk6ZmxleDthbGlnbi1pdGVtczpjZW50ZXI7anVzdGlmeS1jb250ZW50OmNlbnRlciI+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiM1NTUiIGZvbnQtc2l6ZT0iMTEiIGZvbnQtZmFtaWx5PSJBcmlhbCI+Q29saXNldTwvdGV4dD48L3N2Zz4='"><div class="ph-label">Coliseu</div></div><div><img src="https://images.unsplash.com/photo-1529260830199-42c24126f198?w=400&q=70" alt="Fontana di Trevi" style="width:100%;height:110px;object-fit:cover;border-radius:7px;border:1px solid #32323e;background:#1e1e26" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjExMHB4IiBzdHlsZT0iYmFja2dyb3VuZDojMWUxZTI2O2Rpc3BsYXk6ZmxleDthbGlnbi1pdGVtczpjZW50ZXI7anVzdGlmeS1jb250ZW50OmNlbnRlciI+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiM1NTUiIGZvbnQtc2l6ZT0iMTEiIGZvbnQtZmFtaWx5PSJBcmlhbCI+Rm9udGFuYSBkaSBUcmV2aTwvdGV4dD48L3N2Zz4='"><div class="ph-label">Fontana di Trevi</div></div><div><img src="https://images.unsplash.com/photo-1555992336-03a23c7b20ee?w=400&q=70" alt="Piazza Navona" style="width:100%;height:110px;object-fit:cover;border-radius:7px;border:1px solid #32323e;background:#1e1e26" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjExMHB4IiBzdHlsZT0iYmFja2dyb3VuZDojMWUxZTI2O2Rpc3BsYXk6ZmxleDthbGlnbi1pdGVtczpjZW50ZXI7anVzdGlmeS1jb250ZW50OmNlbnRlciI+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiM1NTUiIGZvbnQtc2l6ZT0iMTEiIGZvbnQtZmFtaWx5PSJBcmlhbCI+UGlhenphIE5hdm9uYTwvdGV4dD48L3N2Zz4='"><div class="ph-label">Piazza Navona</div></div><div><img src="https://images.unsplash.com/photo-1531572753322-ad063cecc140?w=400&q=70" alt="Vaticano" style="width:100%;height:110px;object-fit:cover;border-radius:7px;border:1px solid #32323e;background:#1e1e26" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjExMHB4IiBzdHlsZT0iYmFja2dyb3VuZDojMWUxZTI2O2Rpc3BsYXk6ZmxleDthbGlnbi1pdGVtczpjZW50ZXI7anVzdGlmeS1jb250ZW50OmNlbnRlciI+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiM1NTUiIGZvbnQtc2l6ZT0iMTEiIGZvbnQtZmFtaWx5PSJBcmlhbCI+VmF0aWNhbm88L3RleHQ+PC9zdmc+'"><div class="ph-label">Vaticano</div></div></div>
 
   <div class="day-card">
-    <div class="day-header"><span class="day-badge">15/11 (Dom)</span><span class="day-title">Chegada + Jantar</span></div>
+    <div class="day-header"><span class="day-badge">15/11 (Dom)</span><span class="day-title">Chegada + Trevi + Piazza di Spagna</span></div>
     <div class="day-body">
-      <div class="info-box warn">Chegada em FCO as 06:40. Check-in so a partir das 15h â€” guarde as malas na recepcao e explore o centro.</div>
+      <div class="info-box warn">Chegada em FCO às 06:40. Dia cheio de propósito, para a Márcia não perder o principal (no dia 16 ela não vai). O que não der, não deu.</div>
       <div class="timeline">
-        <div class="tl-item"><div class="tl-time">06:40</div><div class="tl-content">Chegada Roma Fiumicino (FCO)<span class="note">Evitar cambio e ATM no aeroporto. Usar BNL na cidade.</span></div></div>
-        <div class="tl-item"><div class="tl-time">Tarde</div><div class="tl-content">Check-in (a partir de 15h) + descanso</div></div>
-        <div class="tl-item"><div class="tl-time">19:30</div><div class="tl-content"><strong>Jantar â€” Ponte e Parione</strong> (reserva feita)<span class="note">Italiano</span><br><a class="map-link" href="https://maps.app.goo.gl/QnDYCgoERBFTWP1x9" target="_blank">Via dei Venti 2, Roma</a></div></div>
+        <div class="tl-item"><div class="tl-time">06:40</div><div class="tl-content">Chegada Roma Fiumicino (FCO)<span class="note">Evitar cambio e ATM no aeroporto.</span></div></div>
+        <div class="tl-item"><div class="tl-time">Manhã</div><div class="tl-content">Deixar as malas na acomodação<span class="note">Check-in só a partir das 15h</span><br><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Via+degli+Spagnoli+41+Roma" target="_blank">Via degli Spagnoli 41</a></div></div>
+        <div class="tl-item"><div class="tl-time">Manhã</div><div class="tl-content"><strong>Fontana di Trevi</strong><br><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Fontana+di+Trevi+Roma" target="_blank">Fontana di Trevi</a></div></div>
+        <div class="tl-item"><div class="tl-time">Tarde</div><div class="tl-content"><strong>Piazza di Spagna + Escadaria Espanhola</strong> + lojas<br><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Piazza+di+Spagna+Roma" target="_blank">Piazza di Spagna</a></div></div>
+        <div class="tl-item"><div class="tl-time">15:00</div><div class="tl-content">Check-in + descanso</div></div>
+        <div class="tl-item"><div class="tl-time">19:30</div><div class="tl-content"><strong>Jantar — Ponte e Parione</strong> (reserva feita)<span class="note">Italiano</span><br><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Ponte+e+Parione+Via+dei+Venti+2+Roma" target="_blank">Via dei Venti 2, Roma</a></div></div>
       </div>
     </div>
   </div>
   <div class="day-card">
-    <div class="day-header"><span class="day-badge">16/11 (Seg)</span><span class="day-title">Fontana di Trevi + Piazza Navona</span></div>
+    <div class="day-header"><span class="day-badge">16/11 (Seg)</span><span class="day-title">Centro histórico (Márcia off)</span></div>
     <div class="day-body">
+      <div class="info-box tip">Vaticano: não está no roteiro do grupo. Se quiserem ver a Praça de São Pedro por fora, este é o dia mais fácil de encaixar.</div>
       <div class="timeline">
-        <div class="tl-item"><div class="tl-time">Manha</div><div class="tl-content"><strong>Fontana di Trevi</strong><br><a class="map-link" href="https://maps.app.goo.gl/vxGAKMREGgP3Bim99" target="_blank">Piazza di Trevi</a></div></div>
-        <div class="tl-item"><div class="tl-time">Tarde</div><div class="tl-content"><strong>Piazza Navona</strong><br><a class="map-link" href="https://maps.app.goo.gl/YzZfj9VfFVJuqo1z6" target="_blank">Piazza Navona</a></div></div>
-        <div class="tl-item"><div class="tl-time">19:30</div><div class="tl-content"><strong>Jantar â€” Da Tonino</strong> (sem reserva, chegar cedo)<br><a class="map-link" href="https://maps.app.goo.gl/PNCRhrE5xNb3x18E6" target="_blank">Via del Governo Vecchio 18</a></div></div>
+        <div class="tl-item"><div class="tl-time">Manhã</div><div class="tl-content"><strong>Campo de' Fiori</strong><span class="note">Dri e Fabrício</span><br><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Campo+de%27+Fiori+Roma" target="_blank">Campo de' Fiori</a></div></div>
+        <div class="tl-item"><div class="tl-time">Manhã</div><div class="tl-content"><strong>Igreja de Santo Inácio de Loyola</strong><br><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Chiesa+di+Sant%27Ignazio+di+Loyola+Roma" target="_blank">Sant'Ignazio di Loyola</a></div></div>
+        <div class="tl-item"><div class="tl-time">Manhã</div><div class="tl-content"><strong>Basilica dei SS. Ambrogio e Carlo al Corso</strong><br><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Basilica+dei+Santi+Ambrogio+e+Carlo+al+Corso+Roma" target="_blank">SS. Ambrogio e Carlo al Corso</a></div></div>
+        <div class="tl-item"><div class="tl-time">Manhã</div><div class="tl-content"><strong>Via del Corso</strong> — compras<br><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Via+del+Corso+Roma" target="_blank">Via del Corso</a></div></div>
+        <div class="tl-item"><div class="tl-time">Dia</div><div class="tl-content">Supermercado (Su)</div></div>
+        <div class="tl-item"><div class="tl-time">Fim de tarde</div><div class="tl-content"><strong>Panteão</strong><br><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Pantheon+Roma" target="_blank">Pantheon</a></div></div>
+        <div class="tl-item"><div class="tl-time">Fim de tarde</div><div class="tl-content"><strong>Piazza della Minerva</strong> (elefantinho)<br><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Piazza+della+Minerva+Roma" target="_blank">Piazza della Minerva</a></div></div>
+        <div class="tl-item"><div class="tl-time">Noite</div><div class="tl-content"><strong>Piazza Navona</strong><br><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Piazza+Navona+Roma" target="_blank">Piazza Navona</a></div></div>
+        <div class="tl-item"><div class="tl-time">19:30</div><div class="tl-content"><strong>Jantar — Da Tonino</strong> (sem reserva, chegar cedo)<span class="note">Só aceita dinheiro</span><br><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Da+Tonino+Via+del+Governo+Vecchio+18+Roma" target="_blank">Via del Governo Vecchio 18</a></div></div>
       </div>
     </div>
   </div>
   <div class="day-card">
-    <div class="day-header"><span class="day-badge">17/11 (Ter)</span><span class="day-title">Coliseu 10:30 + Foro Romano</span></div>
+    <div class="day-header"><span class="day-badge">17/11 (Ter)</span><span class="day-title">Roma Antiga + Trastevere</span></div>
     <div class="day-body">
-      <div class="info-box warn">Ingresso: 10:30. Chegar as 10:15. Documento obrigatorio. Valido 75 min.</div>
+      <div class="info-box warn">Ingresso: 10:30. Chegar às 10:15. Documento obrigatório. Válido 75 min.</div>
       <div class="timeline">
-        <div class="tl-item"><div class="tl-time">10:15</div><div class="tl-content"><strong>Coliseu</strong><span class="note">5x EUR 18 + Maya gratuita. Reserva OCO4986372.</span><br><a class="map-link" href="https://maps.app.goo.gl/W8v1KFNQ5fRoabbs7" target="_blank">Piazza del Colosseo 1</a></div></div>
-        <div class="tl-item"><div class="tl-time">12:00+</div><div class="tl-content"><strong>Foro Romano + Monte Palatino</strong><span class="note">Incluido no mesmo ingresso</span><br><a class="map-link" href="https://maps.app.goo.gl/KqyPJ9YyB1j4sVkc6" target="_blank">Via Sacra, Roma</a></div></div>
-        <div class="tl-item"><div class="tl-time">Tarde</div><div class="tl-content"><strong>Campo de Fiori</strong><br><a class="map-link" href="https://maps.app.goo.gl/tTkpCLHiPzLAJ8v39" target="_blank">Campo de Fiori</a></div></div>
-        <div class="tl-item"><div class="tl-time">19:30</div><div class="tl-content"><strong>Jantar â€” Renato e Luisa</strong> (reserva feita)<br><a class="map-link" href="https://maps.app.goo.gl/o7BqxsSA5QnFtkx5A" target="_blank">Via dei Barbieri 25</a></div></div>
+        <div class="tl-item"><div class="tl-time">10:15</div><div class="tl-content"><strong>Coliseu</strong><span class="note">5x EUR 18 + Maya gratuita. Reserva OCO4986372.</span><br><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Colosseo+Roma" target="_blank">Piazza del Colosseo 1</a></div></div>
+        <div class="tl-item"><div class="tl-time">11:30</div><div class="tl-content"><strong>Arco de Constantino</strong><br><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Arco+di+Costantino+Roma" target="_blank">Arco di Costantino</a></div></div>
+        <div class="tl-item"><div class="tl-time">12:00+</div><div class="tl-content"><strong>Fórum Romano + Monte Palatino</strong><span class="note">Mesmo ingresso. Su e Maya não vão ao Palatino.</span><br><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Foro+Romano+Roma" target="_blank">Via Sacra, Roma</a></div></div>
+        <div class="tl-item"><div class="tl-time">Tarde</div><div class="tl-content"><strong>Via dei Fori Imperiali</strong><span class="note">Avenida no coração da Roma Antiga</span><br><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Via+dei+Fori+Imperiali+Roma" target="_blank">Via dei Fori Imperiali</a></div></div>
+        <div class="tl-item"><div class="tl-time">Tarde</div><div class="tl-content"><strong>Ilha Tiberina</strong><br><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Isola+Tiberina+Roma" target="_blank">Isola Tiberina</a></div></div>
+        <div class="tl-item"><div class="tl-time">Fim de tarde</div><div class="tl-content"><strong>Trastevere + Santa Maria in Trastevere</strong><span class="note">Su e Maya encontram o grupo aqui. Supplì no Supplì Roma.</span><br><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Basilica+di+Santa+Maria+in+Trastevere+Roma" target="_blank">Santa Maria in Trastevere</a></div></div>
+        <div class="tl-item"><div class="tl-time">19:30</div><div class="tl-content"><strong>Jantar — Renato e Luisa</strong> (reserva feita)<br><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Renato+e+Luisa+Via+dei+Barbieri+25+Roma" target="_blank">Via dei Barbieri 25</a></div></div>
       </div>
     </div>
   </div>
   <div class="day-card">
-    <div class="day-header"><span class="day-badge">18/11 (Qua)</span><span class="day-title">Vaticano + Partida para Milao</span></div>
+    <div class="day-header"><span class="day-badge">18/11 (Qua)</span><span class="day-title">Partida para Milão</span></div>
     <div class="day-body">
+      <div class="info-box warn">Não dá tempo de ir ao Vaticano nesta manhã: o trem sai de Termini às 10:05.</div>
       <div class="timeline">
-        <div class="tl-item"><div class="tl-time">Manha</div><div class="tl-content"><strong>Praca de Sao Pedro</strong> â€” por fora<br><a class="map-link" href="https://maps.app.goo.gl/8XpVQKDrGD1kq7Sk9" target="_blank">Piazza San Pietro</a></div></div>
-        <div class="tl-item"><div class="tl-time">Tarde</div><div class="tl-content">Check-out + Transfer Roma → Milao</div></div>
+        <div class="tl-item"><div class="tl-time">Cedo</div><div class="tl-content">Café da manhã + check-out (até 11h)</div></div>
+        <div class="tl-item"><div class="tl-time">09:30</div><div class="tl-content">Sair para Roma Termini<span class="note">Táxi ou metrô — chegar com folga</span></div></div>
+        <div class="tl-item"><div class="tl-time">10:05</div><div class="tl-content"><strong>Trem Italo 9976 → Milano Centrale</strong><span class="note">Vagão 9 · Cod. BL6T4B · todos os 6</span></div></div>
+        <div class="tl-item"><div class="tl-time">13:15</div><div class="tl-content">Chegada Milano Centrale</div></div>
       </div>
     </div>
   </div>
@@ -254,29 +270,31 @@ footer{text-align:center;padding:2rem;color:var(--muted);font-size:.7rem;font-fa
 
 <div id="milao" class="section">
   <div class="city-header">
-    <div class="city-emoji">ðŸ™ï¸</div>
+    <div class="city-emoji">🏙️</div>
     <div><h2>Milao</h2><div class="dates">18 a 20 de Novembro</div></div>
   </div>
   <div class="hotel-card">
-    <div class="hotel-name">EasyTopStay â€” Cosy Apartment Close To Navigli</div>
+    <div class="hotel-name">EasyTopStay — Cosy Apartment Close To Navigli</div>
     <div class="hotel-meta">
-      ðŸ“ 46 Corso di Porta Ticinese, Milan 20123<br>
-      ðŸ“ž <span>+39 340 134 6663</span><br>
-      ðŸ—“ï¸ <span>Check-in: 18/11 (16h-23h) | Check-out: 20/11 (ate 10h)</span>
+      📍 46 Corso di Porta Ticinese, Milan 20123<br>
+      📞 <span>+39 340 134 6663</span><br>
+      🗓️ <span>Check-in: 18/11 (16h-23h) | Check-out: 20/11 (ate 10h)</span>
     </div>
     <div style="margin-top:.6rem">
       <a class="map-link" href="https://maps.app.goo.gl/fAE6JEKCjoxp1Wc19" target="_blank">Ver no Maps</a>
-      <a class="pdf-btn" href="pdfs/hotel_milao_navigli.pdf" target="_blank">ðŸ“‹ Booking Milao â€” Navigli</a>
+      <a class="pdf-btn" href="pdfs/hotel_milao_navigli.pdf" target="_blank">📋 Booking Milao — Navigli</a>
     </div>
   </div>
   <div class="photo-grid"><div><img src="https://images.unsplash.com/photo-1610016302534-6f67f1c968d8?w=400&q=70" alt="Duomo de Milao" style="width:100%;height:110px;object-fit:cover;border-radius:7px;border:1px solid #32323e;background:#1e1e26" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjExMHB4IiBzdHlsZT0iYmFja2dyb3VuZDojMWUxZTI2O2Rpc3BsYXk6ZmxleDthbGlnbi1pdGVtczpjZW50ZXI7anVzdGlmeS1jb250ZW50OmNlbnRlciI+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiM1NTUiIGZvbnQtc2l6ZT0iMTEiIGZvbnQtZmFtaWx5PSJBcmlhbCI+RHVvbW8gZGUgTWlsYW88L3RleHQ+PC9zdmc+'"><div class="ph-label">Duomo de Milao</div></div><div><img src="https://images.unsplash.com/photo-1584961038734-6a07c71a3aaa?w=400&q=70" alt="Galleria V.Emanuele" style="width:100%;height:110px;object-fit:cover;border-radius:7px;border:1px solid #32323e;background:#1e1e26" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjExMHB4IiBzdHlsZT0iYmFja2dyb3VuZDojMWUxZTI2O2Rpc3BsYXk6ZmxleDthbGlnbi1pdGVtczpjZW50ZXI7anVzdGlmeS1jb250ZW50OmNlbnRlciI+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiM1NTUiIGZvbnQtc2l6ZT0iMTEiIGZvbnQtZmFtaWx5PSJBcmlhbCI+R2FsbGVyaWEgVi5FbWFudWVsZTwvdGV4dD48L3N2Zz4='"><div class="ph-label">Galleria V.Emanuele</div></div><div><img src="https://images.unsplash.com/photo-1565793979637-cc32a087e5f9?w=400&q=70" alt="Navigli a noite" style="width:100%;height:110px;object-fit:cover;border-radius:7px;border:1px solid #32323e;background:#1e1e26" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjExMHB4IiBzdHlsZT0iYmFja2dyb3VuZDojMWUxZTI2O2Rpc3BsYXk6ZmxleDthbGlnbi1pdGVtczpjZW50ZXI7anVzdGlmeS1jb250ZW50OmNlbnRlciI+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiM1NTUiIGZvbnQtc2l6ZT0iMTEiIGZvbnQtZmFtaWx5PSJBcmlhbCI+TmF2aWdsaSBhIG5vaXRlPC90ZXh0Pjwvc3ZnPg=='"><div class="ph-label">Navigli a noite</div></div></div>
   <div class="day-card">
     <div class="day-header"><span class="day-badge">18/11 (Qua)</span><span class="day-title">Chegada + Navigli</span></div>
     <div class="day-body">
+      <div class="info-box warn">O trem chega 13:15, mas o check-in é só a partir das 16h. Combinar com o anfitrião para deixar as malas, ou usar o guarda-volumes da estação.</div>
       <div class="timeline">
-        <div class="tl-item"><div class="tl-time">16:00</div><div class="tl-content">Chegada e check-in</div></div>
-        <div class="tl-item"><div class="tl-time">17:30</div><div class="tl-content"><strong>Darsena + Naviglio Grande</strong><br><a class="map-link" href="https://maps.app.goo.gl/Y3RKbEVMvhQ3wZPh9" target="_blank">Darsena</a><a class="map-link" href="https://maps.app.goo.gl/5xPmHgkJq2r8uM3y8" target="_blank">Naviglio Grande</a></div></div>
-        <div class="tl-item"><div class="tl-time">20:00</div><div class="tl-content"><strong>Jantar nos Navigli</strong> (ver aba Restaurantes)</div></div>
+        <div class="tl-item"><div class="tl-time">13:15</div><div class="tl-content">Chegada Milano Centrale<span class="note">Almoço perto da estação ou do apê</span></div></div>
+        <div class="tl-item"><div class="tl-time">16:00</div><div class="tl-content">Check-in (a partir das 16h)<br><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Corso+di+Porta+Ticinese+46+Milano" target="_blank">Corso di Porta Ticinese 46</a></div></div>
+        <div class="tl-item"><div class="tl-time">17:15</div><div class="tl-content"><strong>Darsena + Naviglio Grande</strong> — canais, lojas, fotos, aperitivo<br><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Darsena+Milano" target="_blank">Darsena Naviglio Grande</a></div></div>
+        <div class="tl-item"><div class="tl-time">19:30</div><div class="tl-content"><strong>Jantar — The Brisket</strong> (reserva feita)<span class="note">Churrasco / BBQ</span><br><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=The+Brisket+Ripa+di+Porta+Ticinese+65+Milano" target="_blank">Ripa di Porta Ticinese 65</a></div></div>
       </div>
     </div>
   </div>
@@ -286,10 +304,12 @@ footer{text-align:center;padding:2rem;color:var(--muted);font-size:.7rem;font-fa
       <div class="timeline">
         <div class="tl-item"><div class="tl-time">09:15</div><div class="tl-content"><strong>Duomo + Piazza del Duomo</strong><br><a class="map-link" href="https://maps.app.goo.gl/aTNjWkqipvXuJT2y5" target="_blank">Piazza del Duomo</a></div></div>
         <div class="tl-item"><div class="tl-time">10:15</div><div class="tl-content"><strong>Galleria Vittorio Emanuele II</strong><br><a class="map-link" href="https://maps.app.goo.gl/3GJVhUq8A5kKuWJf9" target="_blank">Galleria V.Emanuele II</a></div></div>
-        <div class="tl-item"><div class="tl-time">11:00</div><div class="tl-content"><strong>KIKO + Primark + Zara + Normal</strong><br><a class="map-link" href="https://maps.app.goo.gl/A5BtW4pvkdX5mLBh6" target="_blank">Via Torino</a></div></div>
+        <div class="tl-item"><div class="tl-time">11:00</div><div class="tl-content"><strong>KIKO (gloss personalizado) + Via Torino</strong><br><a class="map-link" href="https://maps.app.goo.gl/A5BtW4pvkdX5mLBh6" target="_blank">Via Torino</a></div></div>
+        <div class="tl-item"><div class="tl-time">13:00</div><div class="tl-content">Almoço — pausa estratégica</div></div>
         <div class="tl-item"><div class="tl-time">14:15</div><div class="tl-content"><strong>Quadrilatero da Moda</strong><br><a class="map-link" href="https://maps.app.goo.gl/8jcRFJ5fyvx8E7Kh9" target="_blank">Via Montenapoleone</a></div></div>
         <div class="tl-item"><div class="tl-time">15:30</div><div class="tl-content"><strong>La Rinascente</strong><br><a class="map-link" href="https://maps.app.goo.gl/5cH4Y7bLPJy2fXGk7" target="_blank">La Rinascente Milano</a></div></div>
         <div class="tl-item"><div class="tl-time">17:00</div><div class="tl-content"><strong>Brera</strong><br><a class="map-link" href="https://maps.app.goo.gl/JkfVYkFCvMqVq8yLA" target="_blank">Via Fiori Chiari, Brera</a></div></div>
+        <div class="tl-item"><div class="tl-time">19:30</div><div class="tl-content"><strong>Jantar — Pasta d'Autore</strong> (sem reserva)<span class="note">Famoso pelo tiramisù</span><br><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Pasta+d%27Autore+Milano" target="_blank">Pasta d'Autore</a></div></div>
       </div>
     </div>
   </div>
@@ -297,8 +317,8 @@ footer{text-align:center;padding:2rem;color:var(--muted);font-size:.7rem;font-fa
     <div class="day-header"><span class="day-badge">20/11 (Sex)</span><span class="day-title">Partida para Veneza</span></div>
     <div class="day-body">
       <div class="timeline">
-        <div class="tl-item"><div class="tl-time">Manha</div><div class="tl-content">Check-out + Transfer para Milano Centrale</div></div>
-        <div class="tl-item"><div class="tl-time">12:35</div><div class="tl-content"><strong>Trem Italo 8983 para Veneza</strong> (cod. YYUJJY)</div></div>
+        <div class="tl-item"><div class="tl-time">Manha</div><div class="tl-content">Check-out (até 10h) + transfer para Milano Centrale<span class="note">Confirmar se há greve (sciopero) de trem no dia 20/11</span></div></div>
+        <div class="tl-item"><div class="tl-time">12:35</div><div class="tl-content"><strong>Trem Italo 8983 para Veneza</strong> (cod. YYUJJY Dri/Fabrício/Antonio · THM7JD Su/Márcia/Maya)</div></div>
         <div class="tl-item"><div class="tl-time">15:03</div><div class="tl-content">Chegada em Venezia Santa Lucia</div></div>
       </div>
     </div>
@@ -307,19 +327,19 @@ footer{text-align:center;padding:2rem;color:var(--muted);font-size:.7rem;font-fa
 
 <div id="veneza" class="section">
   <div class="city-header">
-    <div class="city-emoji">ðŸš¢</div>
+    <div class="city-emoji">🚢</div>
     <div><h2>Veneza</h2><div class="dates">20 a 23 de Novembro</div></div>
   </div>
   <div class="hotel-card">
     <div class="hotel-name">Apartment Close Guglie Bridge</div>
     <div class="hotel-meta">
-      ðŸ“ 1376A Cannaregio â€” Veneza 30121<br>
-      ðŸ“ž <span>+39 389 449 4869</span><br>
-      ðŸ—“ï¸ <span>Check-in: 20/11 (15h-22h) | Check-out: 23/11 (ate 10h)</span>
+      📍 1376A Cannaregio — Veneza 30121<br>
+      📞 <span>+39 389 449 4869</span><br>
+      🗓️ <span>Check-in: 20/11 (15h-22h) | Check-out: 23/11 (ate 10h)</span>
     </div>
     <div style="margin-top:.6rem">
       <a class="map-link" href="https://maps.app.goo.gl/2ZJxT8kJsMHMnBAFA" target="_blank">Ver no Maps</a>
-      <a class="pdf-btn" href="pdfs/hotel_veneza_guglie.pdf" target="_blank">ðŸ“‹ Booking Veneza â€” Guglie</a>
+      <a class="pdf-btn" href="pdfs/hotel_veneza_guglie.pdf" target="_blank">📋 Booking Veneza — Guglie</a>
     </div>
   </div>
   <div class="photo-grid"><div><img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=400&q=70" alt="Canal Grande" style="width:100%;height:110px;object-fit:cover;border-radius:7px;border:1px solid #32323e;background:#1e1e26" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjExMHB4IiBzdHlsZT0iYmFja2dyb3VuZDojMWUxZTI2O2Rpc3BsYXk6ZmxleDthbGlnbi1pdGVtczpjZW50ZXI7anVzdGlmeS1jb250ZW50OmNlbnRlciI+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiM1NTUiIGZvbnQtc2l6ZT0iMTEiIGZvbnQtZmFtaWx5PSJBcmlhbCI+Q2FuYWwgR3JhbmRlPC90ZXh0Pjwvc3ZnPg=='"><div class="ph-label">Canal Grande</div></div><div><img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=400&q=70" alt="Ponte di Rialto" style="width:100%;height:110px;object-fit:cover;border-radius:7px;border:1px solid #32323e;background:#1e1e26" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjExMHB4IiBzdHlsZT0iYmFja2dyb3VuZDojMWUxZTI2O2Rpc3BsYXk6ZmxleDthbGlnbi1pdGVtczpjZW50ZXI7anVzdGlmeS1jb250ZW50OmNlbnRlciI+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiM1NTUiIGZvbnQtc2l6ZT0iMTEiIGZvbnQtZmFtaWx5PSJBcmlhbCI+UG9udGUgZGkgUmlhbHRvPC90ZXh0Pjwvc3ZnPg=='"><div class="ph-label">Ponte di Rialto</div></div><div><img src="https://images.unsplash.com/photo-1514890547357-a9ee288728e0?w=400&q=70" alt="Basilica San Marco" style="width:100%;height:110px;object-fit:cover;border-radius:7px;border:1px solid #32323e;background:#1e1e26" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjExMHB4IiBzdHlsZT0iYmFja2dyb3VuZDojMWUxZTI2O2Rpc3BsYXk6ZmxleDthbGlnbi1pdGVtczpjZW50ZXI7anVzdGlmeS1jb250ZW50OmNlbnRlciI+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiM1NTUiIGZvbnQtc2l6ZT0iMTEiIGZvbnQtZmFtaWx5PSJBcmlhbCI+QmFzaWxpY2EgU2FuIE1hcmNvPC90ZXh0Pjwvc3ZnPg=='"><div class="ph-label">Basilica San Marco</div></div><div><img src="https://images.unsplash.com/photo-1551801841-ecad875a5142?w=400&q=70" alt="Burano" style="width:100%;height:110px;object-fit:cover;border-radius:7px;border:1px solid #32323e;background:#1e1e26" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjExMHB4IiBzdHlsZT0iYmFja2dyb3VuZDojMWUxZTI2O2Rpc3BsYXk6ZmxleDthbGlnbi1pdGVtczpjZW50ZXI7anVzdGlmeS1jb250ZW50OmNlbnRlciI+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiM1NTUiIGZvbnQtc2l6ZT0iMTEiIGZvbnQtZmFtaWx5PSJBcmlhbCI+QnVyYW5vPC90ZXh0Pjwvc3ZnPg=='"><div class="ph-label">Burano</div></div><div><img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=400&q=70" alt="Gondola" style="width:100%;height:110px;object-fit:cover;border-radius:7px;border:1px solid #32323e;background:#1e1e26" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjExMHB4IiBzdHlsZT0iYmFja2dyb3VuZDojMWUxZTI2O2Rpc3BsYXk6ZmxleDthbGlnbi1pdGVtczpjZW50ZXI7anVzdGlmeS1jb250ZW50OmNlbnRlciI+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiM1NTUiIGZvbnQtc2l6ZT0iMTEiIGZvbnQtZmFtaWx5PSJBcmlhbCI+R29uZG9sYTwvdGV4dD48L3N2Zz4='"><div class="ph-label">Gondola</div></div></div>
@@ -329,8 +349,8 @@ footer{text-align:center;padding:2rem;color:var(--muted);font-size:.7rem;font-fa
     <div class="day-body">
       <div class="timeline">
         <div class="tl-item"><div class="tl-time">15:00</div><div class="tl-content">Chegada + check-in</div></div>
-        <div class="tl-item"><div class="tl-time">17:30</div><div class="tl-content"><strong>Cannaregio</strong> â€” Guglie, Ghetto Nuovo, Fondamenta Misericordia<br><a class="map-link" href="https://maps.app.goo.gl/t8UcKHJFxCQLPv8z7" target="_blank">Fondamenta Misericordia</a></div></div>
-        <div class="tl-item"><div class="tl-time">19:30</div><div class="tl-content">Jantar em Cannaregio</div></div>
+        <div class="tl-item"><div class="tl-time">17:30</div><div class="tl-content"><strong>Cannaregio</strong> — Guglie, Ghetto Nuovo, Fondamenta Misericordia<br><a class="map-link" href="https://maps.app.goo.gl/t8UcKHJFxCQLPv8z7" target="_blank">Fondamenta Misericordia</a></div></div>
+        <div class="tl-item"><div class="tl-time">19:30</div><div class="tl-content"><strong>Jantar — Very Good</strong><br><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Very+Good+Venezia+Cannaregio" target="_blank">Fondamenta Cannaregio</a></div></div>
       </div>
     </div>
   </div>
@@ -340,11 +360,12 @@ footer{text-align:center;padding:2rem;color:var(--muted);font-size:.7rem;font-fa
       <div class="timeline">
         <div class="tl-item"><div class="tl-time">09:00</div><div class="tl-content">Cannaregio → Strada Nova → Rialto → Mercerie → San Marco</div></div>
         <div class="tl-item"><div class="tl-time">10:00</div><div class="tl-content"><strong>Ponte di Rialto</strong><br><a class="map-link" href="https://maps.app.goo.gl/H5MXNWV7yDmRuBxK6" target="_blank">Ponte di Rialto</a></div></div>
-        <div class="tl-item"><div class="tl-time">11:00</div><div class="tl-content"><strong>Piazza San Marco</strong> â€” tudo por fora<br><a class="map-link" href="https://maps.app.goo.gl/GsJJFG7nkKVHLiVP9" target="_blank">Piazza San Marco</a></div></div>
-        <div class="tl-item"><div class="tl-time">12:15</div><div class="tl-content"><strong>Traghetto EUR 2/pessoa</strong><span class="note">San Toma → Sant'Angelo (travessia do canal)</span></div></div>
-        <div class="tl-item"><div class="tl-time">12:30</div><div class="tl-content"><strong>Gondola</strong> â€” 2 gondolas (~EUR 90 cada, 30 min, max 5 pessoas)<br><a class="map-link" href="https://maps.app.goo.gl/ib4Js4yEqbBz8c6d7" target="_blank">Bacino Orseolo</a></div></div>
+        <div class="tl-item"><div class="tl-time">11:00</div><div class="tl-content"><strong>Piazza San Marco</strong> — tudo por fora<br><a class="map-link" href="https://maps.app.goo.gl/GsJJFG7nkKVHLiVP9" target="_blank">Piazza San Marco</a></div></div>
+        <div class="tl-item"><div class="tl-time">12:15</div><div class="tl-content"><strong>Traghetto EUR 2/pessoa</strong><span class="note">San Tomà → Sant'Angelo (travessia do canal). Fazer este primeiro; a gôndola de EUR 90 só se ainda quiserem.</span></div></div>
+        <div class="tl-item"><div class="tl-time">12:30</div><div class="tl-content"><strong>Gôndola (opcional)</strong> — 2 gôndolas (~EUR 90 cada, 30 min, máx. 5 pessoas)<br><a class="map-link" href="https://maps.app.goo.gl/ib4Js4yEqbBz8c6d7" target="_blank">Bacino Orseolo</a></div></div>
         <div class="tl-item"><div class="tl-time">14:30</div><div class="tl-content"><strong>San Polo</strong><br><a class="map-link" href="https://maps.app.goo.gl/3hBjXV3WveFj8r6r9" target="_blank">Campo San Polo</a></div></div>
-        <div class="tl-item"><div class="tl-time">16:30</div><div class="tl-content">Hotel â€” pausa obrigatoria</div></div>
+        <div class="tl-item"><div class="tl-time">16:30</div><div class="tl-content">Hotel — pausa obrigatória</div></div>
+        <div class="tl-item"><div class="tl-time">19:30</div><div class="tl-content"><strong>Jantar — Ristorante Da Poggi</strong><br><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Ristorante+Da+Poggi+Venezia" target="_blank">Strada Nova</a></div></div>
       </div>
     </div>
   </div>
@@ -354,66 +375,91 @@ footer{text-align:center;padding:2rem;color:var(--muted);font-size:.7rem;font-fa
       <div class="info-box tip">Vaporetto: EUR 9,50/pessoa (75 min). Validar o bilhete antes de embarcar.</div>
       <div class="timeline">
         <div class="tl-item"><div class="tl-time">09:00</div><div class="tl-content"><strong>Vaporetto: Guglie → Murano Faro</strong></div></div>
-        <div class="tl-item"><div class="tl-time">10:00</div><div class="tl-content"><strong>Murano</strong> â€” passeio + fabrica de vidro (opcional)<br><a class="map-link" href="https://maps.app.goo.gl/bB3Q8k5HbMVaLw3G9" target="_blank">Murano</a></div></div>
-        <div class="tl-item"><div class="tl-time">12:30</div><div class="tl-content"><strong>Burano</strong> â€” casas coloridas, Piazza Galuppi<br><a class="map-link" href="https://maps.app.goo.gl/gLWoEK3WT9BK2jGx9" target="_blank">Burano</a></div></div>
+        <div class="tl-item"><div class="tl-time">10:00</div><div class="tl-content"><strong>Murano</strong> — passeio + fabrica de vidro (opcional)<br><a class="map-link" href="https://maps.app.goo.gl/bB3Q8k5HbMVaLw3G9" target="_blank">Murano</a></div></div>
+        <div class="tl-item"><div class="tl-time">12:30</div><div class="tl-content"><strong>Burano</strong> — casas coloridas, Piazza Galuppi<br><a class="map-link" href="https://maps.app.goo.gl/gLWoEK3WT9BK2jGx9" target="_blank">Burano</a></div></div>
         <div class="tl-item"><div class="tl-time">13:30</div><div class="tl-content">Almoco em Burano</div></div>
         <div class="tl-item"><div class="tl-time">16:00</div><div class="tl-content">Vaporetto: Burano → Guglie</div></div>
-        <div class="tl-item"><div class="tl-time">19:00</div><div class="tl-content"><strong>Ultima noite em Cannaregio</strong> â€” aperitivo + jantar<br><a class="map-link" href="https://maps.app.goo.gl/t8UcKHJFxCQLPv8z7" target="_blank">Fondamenta Misericordia</a></div></div>
+        <div class="tl-item"><div class="tl-time">19:00</div><div class="tl-content"><strong>Última noite — Jantar Al Timon</strong> (bisteca, 2+ pessoas; ligar para reservar)<br><a class="map-link" href="https://maps.app.goo.gl/t8UcKHJFxCQLPv8z7" target="_blank">Fondamenta Misericordia</a></div></div>
       </div>
     </div>
   </div>
   <div class="day-card">
     <div class="day-header"><span class="day-badge">23/11 (Seg)</span><span class="day-title">Partida para Florenca</span></div>
-    <div class="day-body"><div class="timeline"><div class="tl-item"><div class="tl-time">Manha</div><div class="tl-content">Check-out + Transfer Veneza → Florenca</div></div></div></div>
+    <div class="day-body"><div class="timeline"><div class="tl-item"><div class="tl-time">Manha</div><div class="tl-content">Check-out (até 10h)</div></div><div class="tl-item"><div class="tl-time">11:05</div><div class="tl-content"><strong>Trem Italo 8911 → Firenze S.M.N.</strong><span class="note">Chega 13:20 · Cod. GCLMWC</span></div></div></div></div>
   </div>
 </div>
 
 <div id="florenca" class="section">
   <div class="city-header">
-    <div class="city-emoji">ðŸŒ¸</div>
+    <div class="city-emoji">🌸</div>
     <div><h2>Florenca</h2><div class="dates">23 a 26 de Novembro</div></div>
   </div>
   <div class="hotel-card">
     <div class="hotel-name">Palazzo Mannaioni Suites</div>
     <div class="hotel-meta">
-      ðŸ“ Via Maffia 9, Santo Spirito â€” Florenca 50125<br>
-      ðŸ“ž <span>+39 055 265 7506</span><br>
-      ðŸ—“ï¸ <span>Check-in: 23/11 (14h-18h) | Check-out: 26/11 (8h-10h30)</span><br>
-      âš ï¸ <span>Deposito de dano: EUR 250 no check-in (devolvido no check-out)</span>
+      📍 Via Maffia 9, Santo Spirito — Florenca 50125<br>
+      📞 <span>+39 055 265 7506</span><br>
+      🗓️ <span>Check-in: 23/11 (14h-18h) | Check-out: 26/11 (8h-10h30)</span><br>
+      ⚠️ <span>Deposito de dano: EUR 250 no check-in (devolvido no check-out)</span>
     </div>
     <div style="margin-top:.6rem">
       <a class="map-link" href="https://maps.app.goo.gl/6G4b43UD3YkFJJiT9" target="_blank">Ver no Maps</a>
-      <a class="pdf-btn" href="pdfs/hotel_florenca_palazzo.pdf" target="_blank">ðŸ“‹ Booking Florenca â€” Palazzo</a>
+      <a class="pdf-btn" href="pdfs/hotel_florenca_palazzo.pdf" target="_blank">📋 Booking Florenca — Palazzo</a>
     </div>
   </div>
   <div class="photo-grid"><div><img src="https://images.unsplash.com/photo-1567108733672-d4ef5b1c7e26?w=400&q=70" alt="Ponte Vecchio" style="width:100%;height:110px;object-fit:cover;border-radius:7px;border:1px solid #32323e;background:#1e1e26" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjExMHB4IiBzdHlsZT0iYmFja2dyb3VuZDojMWUxZTI2O2Rpc3BsYXk6ZmxleDthbGlnbi1pdGVtczpjZW50ZXI7anVzdGlmeS1jb250ZW50OmNlbnRlciI+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiM1NTUiIGZvbnQtc2l6ZT0iMTEiIGZvbnQtZmFtaWx5PSJBcmlhbCI+UG9udGUgVmVjY2hpbzwvdGV4dD48L3N2Zz4='"><div class="ph-label">Ponte Vecchio</div></div><div><img src="https://images.unsplash.com/photo-1582610116397-edb318620f90?w=400&q=70" alt="Piazza della Signoria" style="width:100%;height:110px;object-fit:cover;border-radius:7px;border:1px solid #32323e;background:#1e1e26" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjExMHB4IiBzdHlsZT0iYmFja2dyb3VuZDojMWUxZTI2O2Rpc3BsYXk6ZmxleDthbGlnbi1pdGVtczpjZW50ZXI7anVzdGlmeS1jb250ZW50OmNlbnRlciI+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiM1NTUiIGZvbnQtc2l6ZT0iMTEiIGZvbnQtZmFtaWx5PSJBcmlhbCI+UGlhenphIGRlbGxhIFNpZ25vcmlhPC90ZXh0Pjwvc3ZnPg=='"><div class="ph-label">Piazza della Signoria</div></div><div><img src="https://images.unsplash.com/photo-1555992457-b8fefdd09097?w=400&q=70" alt="Piazzale Michelangelo" style="width:100%;height:110px;object-fit:cover;border-radius:7px;border:1px solid #32323e;background:#1e1e26" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjExMHB4IiBzdHlsZT0iYmFja2dyb3VuZDojMWUxZTI2O2Rpc3BsYXk6ZmxleDthbGlnbi1pdGVtczpjZW50ZXI7anVzdGlmeS1jb250ZW50OmNlbnRlciI+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiM1NTUiIGZvbnQtc2l6ZT0iMTEiIGZvbnQtZmFtaWx5PSJBcmlhbCI+UGlhenphbGUgTWljaGVsYW5nZWxvPC90ZXh0Pjwvc3ZnPg=='"><div class="ph-label">Piazzale Michelangelo</div></div><div><img src="https://images.unsplash.com/photo-1555992336-03a23c7b20ee?w=400&q=70" alt="Mercado Central" style="width:100%;height:110px;object-fit:cover;border-radius:7px;border:1px solid #32323e;background:#1e1e26" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjExMHB4IiBzdHlsZT0iYmFja2dyb3VuZDojMWUxZTI2O2Rpc3BsYXk6ZmxleDthbGlnbi1pdGVtczpjZW50ZXI7anVzdGlmeS1jb250ZW50OmNlbnRlciI+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiM1NTUiIGZvbnQtc2l6ZT0iMTEiIGZvbnQtZmFtaWx5PSJBcmlhbCI+TWVyY2FkbyBDZW50cmFsPC90ZXh0Pjwvc3ZnPg=='"><div class="ph-label">Mercado Central</div></div><div><img src="https://images.unsplash.com/photo-1543429257-3eb0b65d9c58?w=400&q=70" alt="Vista de Florenca" style="width:100%;height:110px;object-fit:cover;border-radius:7px;border:1px solid #32323e;background:#1e1e26" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjExMHB4IiBzdHlsZT0iYmFja2dyb3VuZDojMWUxZTI2O2Rpc3BsYXk6ZmxleDthbGlnbi1pdGVtczpjZW50ZXI7anVzdGlmeS1jb250ZW50OmNlbnRlciI+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiM1NTUiIGZvbnQtc2l6ZT0iMTEiIGZvbnQtZmFtaWx5PSJBcmlhbCI+VmlzdGEgZGUgRmxvcmVuY2E8L3RleHQ+PC9zdmc+'"><div class="ph-label">Vista de Florenca</div></div></div>
   <div class="day-card">
-    <div class="day-header"><span class="day-badge">23/11 (Seg)</span><span class="day-title">Chegada + Ponte Vecchio</span></div>
+    <div class="day-header"><span class="day-badge">23/11 (Seg)</span><span class="day-title">Chegada + Florença clássica</span></div>
     <div class="day-body">
       <div class="timeline">
-        <div class="tl-item"><div class="tl-time">Tarde</div><div class="tl-content">Chegada de Veneza, check-in (14h-18h)</div></div>
-        <div class="tl-item"><div class="tl-time">Tarde</div><div class="tl-content"><strong>Ponte Vecchio</strong><br><a class="map-link" href="https://maps.app.goo.gl/Yh3BfQxVAKfwG7hV8" target="_blank">Ponte Vecchio</a></div></div>
-        <div class="tl-item"><div class="tl-time">Tarde</div><div class="tl-content"><strong>Piazza della Signoria</strong><br><a class="map-link" href="https://maps.app.goo.gl/BxHKMbT3wjFgMtgc8" target="_blank">Piazza della Signoria</a></div></div>
+        <div class="tl-item"><div class="tl-time">13:20</div><div class="tl-content">Chegada Firenze S.M.N. → táxi para o apartamento<span class="note">Com 7 pessoas e malas, melhor não ir a pé</span></div></div>
+        <div class="tl-item"><div class="tl-time">14:00</div><div class="tl-content">Check-in + descanso rápido<br><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Via+Maffia+9+Firenze" target="_blank">Via Maffia 9</a></div></div>
+        <div class="tl-item"><div class="tl-time">15:00</div><div class="tl-content"><strong>Piazza + Basilica di Santo Spirito</strong><br><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Piazza+Santo+Spirito+Firenze" target="_blank">Piazza Santo Spirito</a></div></div>
+        <div class="tl-item"><div class="tl-time">15:30</div><div class="tl-content"><strong>Piazza Pitti</strong> — palácio por fora<br><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Palazzo+Pitti+Firenze" target="_blank">Palazzo Pitti</a></div></div>
+        <div class="tl-item"><div class="tl-time">16:00</div><div class="tl-content"><strong>Ponte Vecchio</strong><br><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Ponte+Vecchio+Firenze" target="_blank">Ponte Vecchio</a></div></div>
+        <div class="tl-item"><div class="tl-time">16:30</div><div class="tl-content"><strong>Piazza della Signoria</strong><span class="note">Cópia do David, Palazzo Vecchio e Loggia dei Lanzi (Perseu, Rapto das Sabinas, Hércules e o Centauro)</span><br><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Piazza+della+Signoria+Firenze" target="_blank">Piazza della Signoria</a></div></div>
+        <div class="tl-item"><div class="tl-time">17:20</div><div class="tl-content"><strong>Fontana del Porcellino</strong> 🐗<span class="note">Tocar o focinho para dar sorte</span><br><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Fontana+del+Porcellino+Firenze" target="_blank">Fontana del Porcellino</a></div></div>
+        <div class="tl-item"><div class="tl-time">17:40</div><div class="tl-content"><strong>Piazza della Repubblica</strong><br><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Piazza+della+Repubblica+Firenze" target="_blank">Piazza della Repubblica</a></div></div>
+        <div class="tl-item"><div class="tl-time">18:00</div><div class="tl-content"><strong>Piazza del Duomo</strong> — tudo por fora, iluminado<br><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Cattedrale+di+Santa+Maria+del+Fiore+Firenze" target="_blank">Duomo di Firenze</a></div></div>
+        <div class="tl-item"><div class="tl-time">19:30</div><div class="tl-content"><strong>Jantar — Braceria All'11</strong> (reserva feita)<span class="note">Bistecca alla fiorentina</span><br><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Braceria+All%2711+Firenze" target="_blank">Braceria All'11</a></div></div>
       </div>
     </div>
   </div>
   <div class="day-card">
-    <div class="day-header"><span class="day-badge">24/11 (Ter)</span><span class="day-title">Duomo + Mercado Central + Piazzale</span></div>
+    <div class="day-header"><span class="day-badge">24/11 (Ter)</span><span class="day-title">Florença histórica + Piazzale Michelangelo</span></div>
     <div class="day-body">
       <div class="timeline">
-        <div class="tl-item"><div class="tl-time">Manha</div><div class="tl-content"><strong>Duomo de Florenca</strong><br><a class="map-link" href="https://maps.app.goo.gl/zEbJRyDExvD4Lxkj7" target="_blank">Cattedrale di Santa Maria del Fiore</a></div></div>
-        <div class="tl-item"><div class="tl-time">Manha</div><div class="tl-content"><strong>Mercado Central de Florenca</strong><br><a class="map-link" href="https://maps.app.goo.gl/BkDv9xckqvS4GXHM7" target="_blank">Mercato Centrale</a></div></div>
-        <div class="tl-item"><div class="tl-time">Tarde</div><div class="tl-content"><strong>Piazzale Michelangelo</strong><br><a class="map-link" href="https://maps.app.goo.gl/5Kuf1p2JYyKdJk9E9" target="_blank">Piazzale Michelangelo</a></div></div>
+        <div class="tl-item"><div class="tl-time">09:30</div><div class="tl-content"><strong>Basilica di Santa Maria Novella</strong> — fachada e praça<br><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Basilica+di+Santa+Maria+Novella+Firenze" target="_blank">Santa Maria Novella</a></div></div>
+        <div class="tl-item"><div class="tl-time">10:05</div><div class="tl-content"><strong>Basilica di San Lorenzo</strong> + ruas comerciais<br><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Basilica+di+San+Lorenzo+Firenze" target="_blank">San Lorenzo</a></div></div>
+        <div class="tl-item"><div class="tl-time">10:50</div><div class="tl-content"><strong>Piazza del Duomo</strong> de dia<br><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Cattedrale+di+Santa+Maria+del+Fiore+Firenze" target="_blank">Duomo di Firenze</a></div></div>
+        <div class="tl-item"><div class="tl-time">11:15</div><div class="tl-content"><strong>Via dei Calzaiuoli</strong> → Piazza della Signoria (fotos)<br><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Via+dei+Calzaiuoli+Firenze" target="_blank">Via dei Calzaiuoli</a></div></div>
+        <div class="tl-item"><div class="tl-time">12:00</div><div class="tl-content"><strong>Basilica di Santa Croce</strong> — por fora<br><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Basilica+di+Santa+Croce+Firenze" target="_blank">Santa Croce</a></div></div>
+        <div class="tl-item"><div class="tl-time">12:45</div><div class="tl-content">Almoço sentado e tranquilo</div></div>
+        <div class="tl-item"><div class="tl-time">14:00</div><div class="tl-content">Apartamento — pausa</div></div>
+        <div class="tl-item"><div class="tl-time">15:30</div><div class="tl-content"><strong>Táxi para o Piazzale Michelangelo</strong><span class="note">Pôr do sol por volta das 16:42</span><br><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Piazzale+Michelangelo+Firenze" target="_blank">Piazzale Michelangelo</a></div></div>
+        <div class="tl-item"><div class="tl-time">17:00</div><div class="tl-content">Táxi de volta + descanso</div></div>
+        <div class="tl-item"><div class="tl-time">19:30</div><div class="tl-content"><strong>Jantar — Trattoria Diladdarno</strong> (reserva feita)<span class="note">Toscana: massas, ragù de javali, tagliata</span><br><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Trattoria+Diladdarno+Firenze" target="_blank">Trattoria Diladdarno</a></div></div>
       </div>
     </div>
   </div>
   <div class="day-card">
-    <div class="day-header"><span class="day-badge">25/11 (Qua)</span><span class="day-title">Uffizi + Compras + Santo Spirito</span></div>
+    <div class="day-header"><span class="day-badge">25/11 (Qua)</span><span class="day-title">Pisa + Lucca</span></div>
     <div class="day-body">
+      <div class="info-box tip">Sem museus. Su e Maya dormem em Pisa; o resto volta para Florença.</div>
       <div class="timeline">
-        <div class="tl-item"><div class="tl-time">Manha</div><div class="tl-content"><strong>Galeria degli Uffizi</strong><span class="note">Reservar em uffizi.it com antecedencia</span><br><a class="map-link" href="https://maps.app.goo.gl/xFBz5FQJXJZH8tnx7" target="_blank">Galleria degli Uffizi</a></div></div>
-        <div class="tl-item"><div class="tl-time">Tarde</div><div class="tl-content"><strong>Compras</strong> â€” Primark, Zara, Normal</div></div>
-        <div class="tl-item"><div class="tl-time">Noite</div><div class="tl-content"><strong>Santo Spirito</strong><br><a class="map-link" href="https://maps.app.goo.gl/yKxTdGJoGTSF9U1r7" target="_blank">Piazza Santo Spirito</a></div></div>
+        <div class="tl-item"><div class="tl-time">07:45</div><div class="tl-content">Café da manhã no apartamento</div></div>
+        <div class="tl-item"><div class="tl-time">08:20</div><div class="tl-content">Táxi para Firenze S.M.N.</div></div>
+        <div class="tl-item"><div class="tl-time">09:00</div><div class="tl-content"><strong>Trem Florença → Pisa</strong><span class="note">Confirmar o horário mais perto da data</span></div></div>
+        <div class="tl-item"><div class="tl-time">10:00</div><div class="tl-content">Chegada em Pisa · Su deixa as malas no hotel em Pisa</div></div>
+        <div class="tl-item"><div class="tl-time">10:30</div><div class="tl-content"><strong>Piazza dei Miracoli</strong> — Torre, Catedral, Batistério<span class="note">Subir a torre é opcional (reserva à parte)</span><br><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Piazza+dei+Miracoli+Pisa" target="_blank">Piazza dei Miracoli</a></div></div>
+        <div class="tl-item"><div class="tl-time">11:45</div><div class="tl-content"><strong>Borgo Stretto</strong> — centro de Pisa<br><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Borgo+Stretto+Pisa" target="_blank">Borgo Stretto</a></div></div>
+        <div class="tl-item"><div class="tl-time">12:15</div><div class="tl-content">Almoço em Pisa</div></div>
+        <div class="tl-item"><div class="tl-time">13:30</div><div class="tl-content"><strong>Trem Pisa → Lucca</strong><span class="note">Descer na Stazione di Lucca</span></div></div>
+        <div class="tl-item"><div class="tl-time">14:45</div><div class="tl-content"><strong>Muralhas de Lucca</strong> — 1 a 1,5 km, não a volta toda<br><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Mura+di+Lucca" target="_blank">Mura di Lucca</a></div></div>
+        <div class="tl-item"><div class="tl-time">15:45</div><div class="tl-content"><strong>Piazza dell'Anfiteatro</strong> — fotos + lanche<br><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Piazza+dell%27Anfiteatro+Lucca" target="_blank">Piazza dell'Anfiteatro</a></div></div>
+        <div class="tl-item"><div class="tl-time">16:15</div><div class="tl-content"><strong>Via Fillungo</strong> → Piazza San Michele<br><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Via+Fillungo+Lucca" target="_blank">Via Fillungo</a></div></div>
+        <div class="tl-item"><div class="tl-time">18:00</div><div class="tl-content">Trem Lucca → Florença (Su fica em Pisa)</div></div>
+        <div class="tl-item"><div class="tl-time">20:00</div><div class="tl-content">Apartamento · jantar livre perto de casa</div></div>
       </div>
     </div>
   </div>
@@ -422,7 +468,7 @@ footer{text-align:center;padding:2rem;color:var(--muted);font-size:.7rem;font-fa
     <div class="day-body">
       <div class="timeline">
         <div class="tl-item"><div class="tl-time">8:00</div><div class="tl-content">Check-out (ate 10h30)</div></div>
-        <div class="tl-item"><div class="tl-time">09:03</div><div class="tl-content"><strong>Trem Italo 8951 â€” Firenze S.M. → Roma Termini</strong><span class="note">Chegada 10:40 | Cod. X8K4QR</span></div></div>
+        <div class="tl-item"><div class="tl-time">09:03</div><div class="tl-content"><strong>Trem Italo 8951 — Firenze S.M. → Roma Termini</strong><span class="note">Chegada 10:40 | Cod. X8K4QR</span></div></div>
         <div class="tl-item"><div class="tl-time">10:40</div><div class="tl-content">Chegada Roma Termini + check-in Raeli Hotel</div></div>
       </div>
     </div>
@@ -430,27 +476,26 @@ footer{text-align:center;padding:2rem;color:var(--muted);font-size:.7rem;font-fa
 </div>
 
 <div id="ingressos" class="section">
-  <div class="city-header"><div class="city-emoji">ðŸŽŸï¸</div><div><h2>Ingressos</h2><div class="dates">Confirmados e Pendentes</div></div></div>
+  <div class="city-header"><div class="city-emoji">🎟️</div><div><h2>Ingressos</h2><div class="dates">Confirmados e Pendentes</div></div></div>
   <table class="tkt-table">
     <thead><tr><th>Data</th><th>Atrativo</th><th>Horario</th><th>Status</th><th>Obs</th></tr></thead>
     <tbody>
-      <tr><td>17/11!/td><td>Coliseu + Foro Romano + Palatino</td><td>10:30</td><td class="ok">Confirmado</td><td>Reserva OCO4986372 · 5x EUR 18 + Maya gratuita<br><a class="pdf-btn" href="pdfs/ingresso_coliseu.pdf" target="_blank">ðŸŽŸï¸ Ingresso Coliseu</a></td></tr>
-      <tr><td>21/11</td><td>Gondola â€” Veneza</td><td>~12:30</td><td class="pend">A confirmar</td><td>2 gondolas, ~EUR 90 cada. Stazio San Marco.</td></tr>
-      <tr><td>25/11</td><td>Uffizi â€” Florenca</td><td>A definir</td><td class="pend">A reservar</td><td>Comprar em uffizi.it com antecedencia.</td></tr>
+      <tr><td>17/11</td><td>Coliseu + Foro Romano + Palatino</td><td>10:30</td><td class="ok">Confirmado</td><td>Reserva OCO4986372 · 5x EUR 18 + Maya gratuita<br><a class="pdf-btn" href="pdfs/ingresso_coliseu.pdf" target="_blank">🎟️ Ingresso Coliseu</a></td></tr>
+      <tr><td>21/11</td><td>Gondola — Veneza</td><td>~12:30</td><td class="pend">A confirmar</td><td>Opcional. Primeiro o traghetto de EUR 2; gôndola ~EUR 90 (2 gôndolas) só se quiserem.</td></tr>
     </tbody>
   </table>
   <div class="info-box warn" style="margin-top:1rem">Coliseu: chegar 15 min antes. Documento obrigatorio. Ingresso valido para 75 min.</div>
 </div>
 
 <div id="restaurantes" class="section">
-  <div class="city-header"><div class="city-emoji">ðŸ</div><div><h2>Restaurantes</h2><div class="dates">Reservas as 19:30</div></div></div>
+  <div class="city-header"><div class="city-emoji">🍝</div><div><h2>Restaurantes</h2><div class="dates">Reservas as 19:30</div></div></div>
   <div class="divider">Roma</div>
   <div class="rest-grid">
     <div class="rest-card">
       <img class="rest-img" src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=400&q=70" alt="Ponte e Parione" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMHB4IiBzdHlsZT0iYmFja2dyb3VuZDojMWUxZTI2Ij48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzU1NSIgZm9udC1zaXplPSIxMSIgZm9udC1mYW1pbHk9IkFyaWFsIj5Qb250ZSBlIFBhcmlvbmU8L3RleHQ+PC9zdmc+'">
       <div class="rest-body">
         <div class="rest-name">Ponte e Parione</div>
-        <div class="rest-meta">ðŸ—“ï¸ 15/11 (Dom)<br>ðŸ Italiano<br><a class="map-link" href="https://maps.app.goo.gl/QnDYCgoERBFTWP1x9" target="_blank">Via dei Venti 2, Roma</a></div>
+        <div class="rest-meta">🗓️ 15/11 (Dom)<br>🍝 Italiano<br><a class="map-link" href="https://maps.app.goo.gl/QnDYCgoERBFTWP1x9" target="_blank">Via dei Venti 2, Roma</a></div>
         <span class="badge-res yes">Reserva 19:30</span>
       </div>
     </div>
@@ -458,202 +503,234 @@ footer{text-align:center;padding:2rem;color:var(--muted);font-size:.7rem;font-fa
       <img class="rest-img" src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=400&q=70" alt="Da Tonino" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMHB4IiBzdHlsZT0iYmFja2dyb3VuZDojMWUxZTI2Ij48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzU1NSIgZm9udC1zaXplPSIxMSIgZm9udC1mYW1pbHk9IkFyaWFsIj5EYSBUb25pbm88L3RleHQ+PC9zdmc+'">
       <div class="rest-body">
         <div class="rest-name">Da Tonino</div>
-        <div class="rest-meta">ðŸ—“ï¸ 16/11 (Seg)<br>ðŸ Italiano tradicional<br><a class="map-link" href="https://maps.app.goo.gl/PNCRhrE5xNb3x18E6" target="_blank">Via del Governo Vecchio 18</a></div>
-        <span class="badge-res no">Sem reserva â€” chegar cedo</span>
+        <div class="rest-meta">🗓️ 16/11 (Seg)<br>🍝 Italiano tradicional<br><a class="map-link" href="https://maps.app.goo.gl/PNCRhrE5xNb3x18E6" target="_blank">Via del Governo Vecchio 18</a></div>
+        <span class="badge-res no">Sem reserva — chegar cedo</span>
       </div>
     </div>
     <div class="rest-card">
       <img class="rest-img" src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=400&q=70" alt="Renato e Luisa" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMHB4IiBzdHlsZT0iYmFja2dyb3VuZDojMWUxZTI2Ij48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzU1NSIgZm9udC1zaXplPSIxMSIgZm9udC1mYW1pbHk9IkFyaWFsIj5SZW5hdG8gZSBMdWlzYTwvdGV4dD48L3N2Zz4='">
       <div class="rest-body">
         <div class="rest-name">Renato e Luisa</div>
-        <div class="rest-meta">ðŸ—“ï¸ 17/11 (Ter)<br>ðŸ Italiano<br><a class="map-link" href="https://maps.app.goo.gl/o7BqxsSA5QnFtkx5A" target="_blank">Via dei Barbieri 25</a></div>
+        <div class="rest-meta">🗓️ 17/11 (Ter)<br>🍝 Italiano<br><a class="map-link" href="https://maps.app.goo.gl/o7BqxsSA5QnFtkx5A" target="_blank">Via dei Barbieri 25</a></div>
         <span class="badge-res yes">Reserva 19:30</span>
       </div>
     </div>
   </div>
-  <div class="divider">Milao â€” Navigli</div>
+  <div class="divider">Milao — Navigli</div>
   <div class="rest-grid">
+    <div class="rest-card">
+      <img class="rest-img" src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&q=70" alt="The Brisket">
+      <div class="rest-body">
+        <div class="rest-name">The Brisket</div>
+        <div class="rest-meta">🗓️ 18/11 (Qua)<br>🥩 Churrasco / BBQ<br><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=The+Brisket+Ripa+di+Porta+Ticinese+65+Milano" target="_blank">Ripa di Porta Ticinese 65</a></div>
+        <span class="badge-res yes">Reserva 19:30</span>
+      </div>
+    </div>
+    <div class="rest-card">
+      <img class="rest-img" src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=400&q=70" alt="Pasta d'Autore">
+      <div class="rest-body">
+        <div class="rest-name">Pasta d'Autore</div>
+        <div class="rest-meta">🗓️ 19/11 (Qui)<br>🍝 Italiano — famoso pelo tiramisù<br><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Pasta+d%27Autore+Milano" target="_blank">Pasta d'Autore</a></div>
+        <span class="badge-res no">Sem reserva — chegar 19:30</span>
+      </div>
+    </div>
     <div class="rest-card">
       <img class="rest-img" src="https://images.unsplash.com/photo-1565793979637-cc32a087e5f9?w=400&q=70" alt="Osteria Dal Cornuto" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMHB4IiBzdHlsZT0iYmFja2dyb3VuZDojMWUxZTI2Ij48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzU1NSIgZm9udC1zaXplPSIxMSIgZm9udC1mYW1pbHk9IkFyaWFsIj5Pc3RlcmlhIERhbCBDb3JudXRvPC90ZXh0Pjwvc3ZnPg=='">
       <div class="rest-body">
         <div class="rest-name">Osteria Dal Cornuto</div>
-        <div class="rest-meta">ðŸ Italiana â€” pasta fresca<br><a class="map-link" href="https://maps.app.goo.gl/2YoUxQnKFEiQGLbF7" target="_blank">Ripa di Porta Ticinese 55</a></div>
-        <span class="badge-res no">Sem reserva</span>
+        <div class="rest-meta">🍝 Italiana — pasta fresca<br><a class="map-link" href="https://maps.app.goo.gl/2YoUxQnKFEiQGLbF7" target="_blank">Ripa di Porta Ticinese 55</a></div>
+        <span class="badge-res no">Alternativa</span>
       </div>
     </div>
     <div class="rest-card">
       <img class="rest-img" src="https://images.unsplash.com/photo-1565793979637-cc32a087e5f9?w=400&q=70" alt="Il Mannarino Navigli" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMHB4IiBzdHlsZT0iYmFja2dyb3VuZDojMWUxZTI2Ij48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzU1NSIgZm9udC1zaXplPSIxMSIgZm9udC1mYW1pbHk9IkFyaWFsIj5JbCBNYW5uYXJpbm8gTmF2aWdsaTwvdGV4dD48L3N2Zz4='">
       <div class="rest-body">
         <div class="rest-name">Il Mannarino Navigli</div>
-        <div class="rest-meta">ðŸ Carne italiana<br><a class="map-link" href="https://maps.app.goo.gl/LkMB7VT3BKBPYfwF7" target="_blank">Alzaia Naviglio Grande 2</a></div>
-        <span class="badge-res no">Sem reserva</span>
+        <div class="rest-meta">🍝 Carne italiana<br><a class="map-link" href="https://maps.app.goo.gl/LkMB7VT3BKBPYfwF7" target="_blank">Alzaia Naviglio Grande 2</a></div>
+        <span class="badge-res no">Alternativa</span>
       </div>
     </div>
     <div class="rest-card">
       <img class="rest-img" src="https://images.unsplash.com/photo-1476124369491-e7addf5db371?w=400&q=70" alt="Officina del Riso" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMHB4IiBzdHlsZT0iYmFja2dyb3VuZDojMWUxZTI2Ij48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzU1NSIgZm9udC1zaXplPSIxMSIgZm9udC1mYW1pbHk9IkFyaWFsIj5PZmZpY2luYSBkZWwgUmlzbzwvdGV4dD48L3N2Zz4='">
       <div class="rest-body">
         <div class="rest-name">Officina del Riso</div>
-        <div class="rest-meta">ðŸ Risotto alla Milanese<br><a class="map-link" href="https://maps.app.goo.gl/eKuqrRFdLXJPRBPs5" target="_blank">Naviglio Grande</a></div>
-        <span class="badge-res no">Sem reserva</span>
+        <div class="rest-meta">🍝 Risotto alla Milanese<br><a class="map-link" href="https://maps.app.goo.gl/eKuqrRFdLXJPRBPs5" target="_blank">Naviglio Grande</a></div>
+        <span class="badge-res no">Alternativa</span>
       </div>
     </div>
     <div class="rest-card">
       <img class="rest-img" src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&q=70" alt="Sberla" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMHB4IiBzdHlsZT0iYmFja2dyb3VuZDojMWUxZTI2Ij48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzU1NSIgZm9udC1zaXplPSIxMSIgZm9udC1mYW1pbHk9IkFyaWFsIj5TYmVybGE8L3RleHQ+PC9zdmc+'">
       <div class="rest-body">
         <div class="rest-name">Sberla</div>
-        <div class="rest-meta">ðŸ Hamburguer artesanal<br><a class="map-link" href="https://maps.app.goo.gl/EaxpBxUGHwBPwYi48" target="_blank">Via Vigevano 3</a></div>
-        <span class="badge-res no">Sem reserva</span>
+        <div class="rest-meta">🍝 Hamburguer artesanal<br><a class="map-link" href="https://maps.app.goo.gl/EaxpBxUGHwBPwYi48" target="_blank">Via Vigevano 3</a></div>
+        <span class="badge-res no">Alternativa</span>
       </div>
     </div>
   </div>
-  <div class="divider">Veneza â€” Cannaregio</div>
-  <div class="info-box tip">Todos a caminhada da hospedagem. Sem peixes â€” opcoes com massa, carne e pizza.</div>
+  <div class="divider">Veneza — Cannaregio</div>
+  <div class="info-box tip">Todos a caminhada da hospedagem. Sem peixes — opcoes com massa, carne e pizza.</div>
   <div class="rest-grid">
     <div class="rest-card">
       <img class="rest-img" src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=400&q=70" alt="Very Good" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMHB4IiBzdHlsZT0iYmFja2dyb3VuZDojMWUxZTI2Ij48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzU1NSIgZm9udC1zaXplPSIxMSIgZm9udC1mYW1pbHk9IkFyaWFsIj5WZXJ5IEdvb2Q8L3RleHQ+PC9zdmc+'">
       <div class="rest-body">
         <div class="rest-name">Very Good</div>
-        <div class="rest-meta">ðŸ—“ï¸ 20/11 (Sex)<br>ðŸ Bigoleria, gnoccheria e pizzeria<br><a class="map-link" href="https://maps.app.goo.gl/8KXU4rCPjKorHr5T8" target="_blank">Fondamenta Cannaregio (3 min da ponte)</a></div>
-        <span class="badge-res no">Sem reserva â€” 4.7 (4.400 avaliações)</span>
+        <div class="rest-meta">🗓️ 20/11 (Sex)<br>🍝 Bigoleria, gnoccheria e pizzeria<br><a class="map-link" href="https://maps.app.goo.gl/8KXU4rCPjKorHr5T8" target="_blank">Fondamenta Cannaregio (3 min da ponte)</a></div>
+        <span class="badge-res yes">19:30 — confirmar reserva com a Su</span>
       </div>
     </div>
     <div class="rest-card">
       <img class="rest-img" src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=400&q=70" alt="Trattoria da Michele" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMHB4IiBzdHlsZT0iYmFja2dyb3VuZDojMWUxZTI2Ij48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzU1NSIgZm9udC1zaXplPSIxMSIgZm9udC1mYW1pbHk9IkFyaWFsIj5UcmF0dG9yaWEgZGEgTWljaGVsZTwvdGV4dD48L3N2Zz4='">
       <div class="rest-body">
         <div class="rest-name">Trattoria da Michele</div>
-        <div class="rest-meta">ðŸ—“ï¸ 20/11 (Sex)<br>ðŸ Tradicional â€” menu EUR 16,50<br><a class="map-link" href="https://maps.app.goo.gl/esBeFNsQURVVdVDQA" target="_blank">Cannaregio (3 min pela Strada Nova)</a></div>
-        <span class="badge-res no">Sem reserva â€” 4.7 (mais bem avaliado)</span>
+        <div class="rest-meta">🗓️ 20/11 (Sex)<br>🍝 Tradicional — menu EUR 16,50<br><a class="map-link" href="https://maps.app.goo.gl/esBeFNsQURVVdVDQA" target="_blank">Cannaregio (3 min pela Strada Nova)</a></div>
+        <span class="badge-res no">Alternativa</span>
       </div>
     </div>
     <div class="rest-card">
       <img class="rest-img" src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=400&q=70" alt="Ristorante Da Poggi" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMHB4IiBzdHlsZT0iYmFja2dyb3VuZDojMWUxZTI2Ij48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzU1NSIgZm9udC1zaXplPSIxMSIgZm9udC1mYW1pbHk9IkFyaWFsIj5SaXN0b3JhbnRlIERhIFBvZ2dpPC90ZXh0Pjwvc3ZnPg=='">
       <div class="rest-body">
         <div class="rest-name">Ristorante Da Poggi</div>
-        <div class="rest-meta">ðŸ—“ï¸ 21/11 (Sab)<br>ðŸ Amatriciana, cacio e pepe, gnocchi 4 queijos<br><a class="map-link" href="https://maps.app.goo.gl/ovuYRsEDJAqYszXS9" target="_blank">Strada Nova (8 min da hospedagem)</a></div>
-        <span class="badge-res no">Sem reserva â€” 4.7 (4.300 avaliações)</span>
+        <div class="rest-meta">🗓️ 21/11 (Sab)<br>🍝 Amatriciana, cacio e pepe, gnocchi 4 queijos<br><a class="map-link" href="https://maps.app.goo.gl/ovuYRsEDJAqYszXS9" target="_blank">Strada Nova (8 min da hospedagem)</a></div>
+        <span class="badge-res yes">19:30 — confirmar reserva com a Su</span>
       </div>
     </div>
     <div class="rest-card">
       <img class="rest-img" src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=400&q=70" alt="Dal Moro's" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMHB4IiBzdHlsZT0iYmFja2dyb3VuZDojMWUxZTI2Ij48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzU1NSIgZm9udC1zaXplPSIxMSIgZm9udC1mYW1pbHk9IkFyaWFsIj5EYWwgTW9ybydzPC90ZXh0Pjwvc3ZnPg=='">
       <div class="rest-body">
         <div class="rest-name">Dal Moro's</div>
-        <div class="rest-meta">ðŸ—“ï¸ 21/11 (Sab)<br>ðŸ Pasta fresca â€” carbonara feita na mesa<br><a class="map-link" href="https://maps.app.goo.gl/ovuYRsEDJAqYszXS9" target="_blank">Castello (25 min a pe, sem reserva)</a></div>
-        <span class="badge-res no">Sem reserva â€” 4.9 (9.000 avaliações)</span>
+        <div class="rest-meta">🗓️ 21/11 (Sab)<br>🍝 Pasta fresca — carbonara feita na mesa<br><a class="map-link" href="https://maps.app.goo.gl/ovuYRsEDJAqYszXS9" target="_blank">Castello (25 min a pe, sem reserva)</a></div>
+        <span class="badge-res no">Alternativa</span>
       </div>
     </div>
     <div class="rest-card">
       <img class="rest-img" src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&q=70" alt="Al Timon" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMHB4IiBzdHlsZT0iYmFja2dyb3VuZDojMWUxZTI2Ij48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzU1NSIgZm9udC1zaXplPSIxMSIgZm9udC1mYW1pbHk9IkFyaWFsIj5BbCBUaW1vbjwvdGV4dD48L3N2Zz4='">
       <div class="rest-body">
         <div class="rest-name">Al Timon</div>
-        <div class="rest-meta">ðŸ—“ï¸ 22/11 (Dom)<br>ðŸ Churrasco â€” bisteca florentina para 2+<br><a class="map-link" href="https://maps.app.goo.gl/Rjs3KVyds2i2o4M98" target="_blank">Fondamenta dei Ormesini (8 min a leste)</a></div>
-        <span class="badge-res no">Sem reserva â€” 4.4 (fechado terças)</span>
+        <div class="rest-meta">🗓️ 22/11 (Dom)<br>🍝 Churrasco — bisteca florentina para 2+<br><a class="map-link" href="https://maps.app.goo.gl/Rjs3KVyds2i2o4M98" target="_blank">Fondamenta dei Ormesini (8 min a leste)</a></div>
+        <span class="badge-res yes">Ligar para reservar · fecha terças</span>
       </div>
     </div>
   </div>
   <div class="divider">Florenca</div>
   <div class="rest-grid">
     <div class="rest-card">
-      <img class="rest-img" src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=400&q=70" alt="The Brisket" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMHB4IiBzdHlsZT0iYmFja2dyb3VuZDojMWUxZTI2Ij48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzU1NSIgZm9udC1zaXplPSIxMSIgZm9udC1mYW1pbHk9IkFyaWFsIj5UaGUgQnJpc2tldDwvdGV4dD48L3N2Zz4='">
+      <img class="rest-img" src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&q=70" alt="Braceria All'11">
       <div class="rest-body">
-        <div class="rest-name">The Brisket</div>
-        <div class="rest-meta">ðŸ—“ï¸ A agendar<br>ðŸ Churrascaria<br><a class="map-link" href="https://maps.app.goo.gl/g6JAT4YmkFM2QDTV6" target="_blank">The Brisket, Florenca</a></div>
+        <div class="rest-name">Braceria All'11</div>
+        <div class="rest-meta">🗓️ 23/11 (Seg)<br>🥩 Bistecca alla fiorentina (Chianina, Black Angus)<br><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Braceria+All%2711+Firenze" target="_blank">Braceria All'11</a></div>
         <span class="badge-res yes">Reserva 19:30</span>
+      </div>
+    </div>
+    <div class="rest-card">
+      <img class="rest-img" src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=400&q=70" alt="Trattoria Diladdarno">
+      <div class="rest-body">
+        <div class="rest-name">Trattoria Diladdarno</div>
+        <div class="rest-meta">🗓️ 24/11 (Ter)<br>🍝 Toscana — massas, ragù de javali, tagliata<br><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Trattoria+Diladdarno+Firenze" target="_blank">Trattoria Diladdarno</a></div>
+        <span class="badge-res yes">Reserva 19:30</span>
+      </div>
+    </div>
+    <div class="rest-card">
+      <img class="rest-img" src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=400&q=70" alt="25/11 — escolher no dia">
+      <div class="rest-body">
+        <div class="rest-name">25/11 — escolher no dia</div>
+        <div class="rest-meta">🗓️ 25/11 (Qua)<br>Su em Pisa, o resto em Florença</div>
+        <span class="badge-res no">Sem reserva</span>
       </div>
     </div>
   </div>
 </div>
 
 <div id="lanches" class="section">
-  <div class="city-header"><div class="city-emoji">ðŸ•</div><div><h2>Lanches e Lojas</h2><div class="dates">Roma / Milao / Florenca</div></div></div>
-  <div class="divider">Lanches â€” Roma</div>
+  <div class="city-header"><div class="city-emoji">🍕</div><div><h2>Lanches e Lojas</h2><div class="dates">Roma / Milao / Florenca</div></div></div>
+  <div class="divider">Lanches — Roma</div>
   <div class="card-grid">
     <div class="snack-card">
-      <img class="snack-img" src="https://images.unsplash.com/photo-1609167830220-7164aa360951?w=400&q=70" alt="Suppli â€” La Casa del Suppli" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEyMHB4IiBzdHlsZT0iYmFja2dyb3VuZDojMWUxZTI2Ij48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzU1NSIgZm9udC1zaXplPSIxMSIgZm9udC1mYW1pbHk9IkFyaWFsIj5TdXBwbGkg4oCUIExhIENhc2EgZGVsIFN1cHBsaTwvdGV4dD48L3N2Zz4='">
+      <img class="snack-img" src="https://images.unsplash.com/photo-1609167830220-7164aa360951?w=400&q=70" alt="Suppli — La Casa del Suppli" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEyMHB4IiBzdHlsZT0iYmFja2dyb3VuZDojMWUxZTI2Ij48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzU1NSIgZm9udC1zaXplPSIxMSIgZm9udC1mYW1pbHk9IkFyaWFsIj5TdXBwbGkg4oCUIExhIENhc2EgZGVsIFN1cHBsaTwvdGV4dD48L3N2Zz4='">
       <div class="snack-body">
         <span class="snack-city">Roma</span>
-        <div class="snack-name">Suppli â€” La Casa del Suppli</div>
-        <div class="snack-desc">Bolinho de arroz recheado. O classico romano.</div>
-        <a class="map-link" href="https://maps.app.goo.gl/MgLHEfpv5maDe9cJ8" target="_blank">Piazza San Calisto 7a</a>
+        <div class="snack-name">Supplì — Supplì Roma (Trastevere)</div>
+        <div class="snack-desc">Bolinho de arroz recheado, o clássico romano. Encaixa no dia 17. A La Casa del Supplì fica longe do roteiro.</div>
+        <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Suppl%C3%AC+Roma+Via+di+San+Francesco+a+Ripa" target="_blank">Via di San Francesco a Ripa</a>
       </div>
     </div>
     <div class="snack-card">
-      <img class="snack-img" src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&q=70" alt="Pizza â€” Roscioli (Antico Forno)" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEyMHB4IiBzdHlsZT0iYmFja2dyb3VuZDojMWUxZTI2Ij48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzU1NSIgZm9udC1zaXplPSIxMSIgZm9udC1mYW1pbHk9IkFyaWFsIj5QaXp6YSDigJQgRm9zY2lvbGkgKEFudGljbyBGb3Jubyk8L3RleHQ+PC9zdmc+'">
+      <img class="snack-img" src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&q=70" alt="Pizza — Roscioli (Antico Forno)" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEyMHB4IiBzdHlsZT0iYmFja2dyb3VuZDojMWUxZTI2Ij48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzU1NSIgZm9udC1zaXplPSIxMSIgZm9udC1mYW1pbHk9IkFyaWFsIj5QaXp6YSDigJQgRm9zY2lvbGkgKEFudGljbyBGb3Jubyk8L3RleHQ+PC9zdmc+'">
       <div class="snack-body">
         <span class="snack-city">Roma</span>
-        <div class="snack-name">Pizza â€” Roscioli (Antico Forno)</div>
+        <div class="snack-name">Pizza — Roscioli (Antico Forno)</div>
         <div class="snack-desc">Fatia de pizza al taglio. Uma das mais famosas de Roma.</div>
         <a class="map-link" href="https://maps.app.goo.gl/pj1ADT2BSPyR7WQJA" target="_blank">Via dei Chiavari 34</a>
       </div>
     </div>
     <div class="snack-card">
-      <img class="snack-img" src="https://images.unsplash.com/photo-1553909489-cd47e0907980?w=400&q=70" alt="Sanduiche â€” All'Antico Vinaio Roma" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEyMHB4IiBzdHlsZT0iYmFja2dyb3VuZDojMWUxZTI2Ij48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzU1NSIgZm9udC1zaXplPSIxMSIgZm9udC1mYW1pbHk9IkFyaWFsIj5TYW5kdWljaGUg4oCUIEFsbCdBbnRpY28gVmluYWlvIFJvbWE8L3RleHQ+PC9zdmc+'">
+      <img class="snack-img" src="https://images.unsplash.com/photo-1553909489-cd47e0907980?w=400&q=70" alt="Sanduiche — All'Antico Vinaio Roma" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEyMHB4IiBzdHlsZT0iYmFja2dyb3VuZDojMWUxZTI2Ij48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzU1NSIgZm9udC1zaXplPSIxMSIgZm9udC1mYW1pbHk9IkFyaWFsIj5TYW5kdWljaGUg4oCUIEFsbCdBbnRpY28gVmluYWlvIFJvbWE8L3RleHQ+PC9zdmc+'">
       <div class="snack-body">
         <span class="snack-city">Roma</span>
-        <div class="snack-name">Sanduiche â€” All'Antico Vinaio Roma</div>
+        <div class="snack-name">Sanduiche — All'Antico Vinaio Roma</div>
         <div class="snack-desc">Sanduiche artesanal, sucursal do famoso de Florenca.</div>
         <a class="map-link" href="https://maps.app.goo.gl/pVsS2kvE8hvdN8Ls6" target="_blank">Via della Croce 13</a>
       </div>
     </div>
     <div class="snack-card">
-      <img class="snack-img" src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&q=70" alt="Croissant â€” L'Antico Forno" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEyMHB4IiBzdHlsZT0iYmFja2dyb3VuZDojMWUxZTI2Ij48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzU1NSIgZm9udC1zaXplPSIxMSIgZm9udC1mYW1pbHk9IkFyaWFsIj5Dcm9pc3NhbnQg4oCUIEwnQW50aWNvIEZvcm5vPC90ZXh0Pjwvc3ZnPg=='">
+      <img class="snack-img" src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&q=70" alt="Croissant — L'Antico Forno" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEyMHB4IiBzdHlsZT0iYmFja2dyb3VuZDojMWUxZTI2Ij48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzU1NSIgZm9udC1zaXplPSIxMSIgZm9udC1mYW1pbHk9IkFyaWFsIj5Dcm9pc3NhbnQg4oCUIEwnQW50aWNvIEZvcm5vPC90ZXh0Pjwvc3ZnPg=='">
       <div class="snack-body">
         <span class="snack-city">Roma</span>
-        <div class="snack-name">Croissant â€” L'Antico Forno</div>
+        <div class="snack-name">Croissant — L'Antico Forno</div>
         <div class="snack-desc">Cornetto artesanal. Cafe da manha tipico romano.</div>
         <a class="map-link" href="https://maps.app.goo.gl/jGK5JV1KSKdJqtdk9" target="_blank">Via delle Muratte 8</a>
       </div>
     </div>
     <div class="snack-card">
-      <img class="snack-img" src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&q=70" alt="Cannoli â€” Don Nino" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEyMHB4IiBzdHlsZT0iYmFja2dyb3VuZDojMWUxZTI2Ij48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzU1NSIgZm9udC1zaXplPSIxMSIgZm9udC1mYW1pbHk9IkFyaWFsIj5DYW5ub2xpIOKAlCBEb24gTmlubzwvdGV4dD48L3N2Zz4='">
+      <img class="snack-img" src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&q=70" alt="Cannoli — Don Nino" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEyMHB4IiBzdHlsZT0iYmFja2dyb3VuZDojMWUxZTI2Ij48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzU1NSIgZm9udC1zaXplPSIxMSIgZm9udC1mYW1pbHk9IkFyaWFsIj5DYW5ub2xpIOKAlCBEb24gTmlubzwvdGV4dD48L3N2Zz4='">
       <div class="snack-body">
         <span class="snack-city">Roma</span>
-        <div class="snack-name">Cannoli â€” Don Nino</div>
-        <div class="snack-desc">Cannoli siciliano autentico no coracao de Roma.</div>
+        <div class="snack-name">Cannoli — Don Nino</div>
+        <div class="snack-desc">⚠️ Lojas do centro com muitas reclamações de preço. Pergunte o preço antes de pedir.</div>
         <a class="map-link" href="https://maps.app.goo.gl/HXzs1c7Pqj7EyBpz6" target="_blank">Via della Pace 19</a>
       </div>
     </div>
     <div class="snack-card">
-      <img class="snack-img" src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=400&q=70" alt="Tiramisu â€” Two Sizes" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEyMHB4IiBzdHlsZT0iYmFja2dyb3VuZDojMWUxZTI2Ij48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzU1NSIgZm9udC1zaXplPSIxMSIgZm9udC1mYW1pbHk9IkFyaWFsIj5UaXJhbWlzdSDigJQgVHdvIFNpemVzPC90ZXh0Pjwvc3ZnPg=='">
+      <img class="snack-img" src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=400&q=70" alt="Tiramisu — Two Sizes" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEyMHB4IiBzdHlsZT0iYmFja2dyb3VuZDojMWUxZTI2Ij48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzU1NSIgZm9udC1zaXplPSIxMSIgZm9udC1mYW1pbHk9IkFyaWFsIj5UaXJhbWlzdSDigJQgVHdvIFNpemVzPC90ZXh0Pjwvc3ZnPg=='">
       <div class="snack-body">
         <span class="snack-city">Roma</span>
-        <div class="snack-name">Tiramisu â€” Two Sizes</div>
+        <div class="snack-name">Tiramisu — Two Sizes</div>
         <div class="snack-desc">Tiramisu tradicional em porcoes individuais.</div>
         <a class="map-link" href="https://maps.app.goo.gl/AanLsN3GdeCqXJo68" target="_blank">Via dell'Arco de'Tolomei 5</a>
       </div>
     </div>
     <div class="snack-card">
-      <img class="snack-img" src="https://images.unsplash.com/photo-1551183053-bf91798d792c?w=400&q=70" alt="Massa â€” Pastaciutta" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEyMHB4IiBzdHlsZT0iYmFja2dyb3VuZDojMWUxZTI2Ij48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzU1NSIgZm9udC1zaXplPSIxMSIgZm9udC1mYW1pbHk9IkFyaWFsIj5NYXNzYSDigJQgUGFzdGFjaXV0dGE8L3RleHQ+PC9zdmc+'">
+      <img class="snack-img" src="https://images.unsplash.com/photo-1551183053-bf91798d792c?w=400&q=70" alt="Massa — Pastaciutta" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEyMHB4IiBzdHlsZT0iYmFja2dyb3VuZDojMWUxZTI2Ij48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzU1NSIgZm9udC1zaXplPSIxMSIgZm9udC1mYW1pbHk9IkFyaWFsIj5NYXNzYSDigJQgUGFzdGFjaXV0dGE8L3RleHQ+PC9zdmc+'">
       <div class="snack-body">
         <span class="snack-city">Roma</span>
-        <div class="snack-name">Massa â€” Pastaciutta</div>
+        <div class="snack-name">Massa — Pastaciutta</div>
         <div class="snack-desc">Massa boa e barata. Opcao casual para almoco.</div>
         <a class="map-link" href="https://maps.app.goo.gl/3zNvWQJVBgUzN7Vz7" target="_blank">Pastaciutta, Roma</a>
       </div>
     </div>
     <div class="snack-card">
-      <img class="snack-img" src="https://images.unsplash.com/photo-1567206563114-c179706b0e8e?w=400&q=70" alt="Gelato â€” Gelateria La Romana" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEyMHB4IiBzdHlsZT0iYmFja2dyb3VuZDojMWUxZTI2Ij48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzU1NSIgZm9udC1zaXplPSIxMSIgZm9udC1mYW1pbHk9IkFyaWFsIj5HZWxhdG8g4oCUIEdlbGF0ZXJpYSBMYSBSb21hbmE8L3RleHQ+PC9zdmc+'">
+      <img class="snack-img" src="https://images.unsplash.com/photo-1567206563114-c179706b0e8e?w=400&q=70" alt="Gelato — Gelateria La Romana" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEyMHB4IiBzdHlsZT0iYmFja2dyb3VuZDojMWUxZTI2Ij48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzU1NSIgZm9udC1zaXplPSIxMSIgZm9udC1mYW1pbHk9IkFyaWFsIj5HZWxhdG8g4oCUIEdlbGF0ZXJpYSBMYSBSb21hbmE8L3RleHQ+PC9zdmc+'">
       <div class="snack-body">
         <span class="snack-city">Roma</span>
-        <div class="snack-name">Gelato â€” Gelateria La Romana</div>
+        <div class="snack-name">Gelato — Gelateria La Romana</div>
         <div class="snack-desc">Gelatos artesanais e casquinhas com chocolate.</div>
         <a class="map-link" href="https://maps.app.goo.gl/pJWcN4rCPPTqkuPx8" target="_blank">Via Venti Settembre 60</a>
       </div>
     </div>
     <div class="snack-card">
-      <img class="snack-img" src="https://images.unsplash.com/photo-1549396657-87bda81f5d9f?w=400&q=70" alt="Gelato â€” Venchi" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEyMHB4IiBzdHlsZT0iYmFja2dyb3VuZDojMWUxZTI2Ij48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzU1NSIgZm9udC1zaXplPSIxMSIgZm9udC1mYW1pbHk9IkFyaWFsIj5HZWxhdG8g4oCUIFZlbmNoaTwvdGV4dD48L3N2Zz4='">
+      <img class="snack-img" src="https://images.unsplash.com/photo-1549396657-87bda81f5d9f?w=400&q=70" alt="Gelato — Venchi" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEyMHB4IiBzdHlsZT0iYmFja2dyb3VuZDojMWUxZTI2Ij48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzU1NSIgZm9udC1zaXplPSIxMSIgZm9udC1mYW1pbHk9IkFyaWFsIj5HZWxhdG8g4oCUIFZlbmNoaTwvdGV4dD48L3N2Zz4='">
       <div class="snack-body">
         <span class="snack-city">Roma / Milao</span>
-        <div class="snack-name">Gelato â€” Venchi</div>
+        <div class="snack-name">Gelato — Venchi</div>
         <div class="snack-desc">Gelatos premium e chocolates.</div>
         <a class="map-link" href="https://maps.app.goo.gl/FX3k1bLzUXkiJJHY7" target="_blank">Via della Croce 25</a>
       </div>
     </div>
     <div class="snack-card">
-      <img class="snack-img" src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&q=70" alt="Hamburguer â€” Dal Compa" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEyMHB4IiBzdHlsZT0iYmFja2dyb3VuZDojMWUxZTI2Ij48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzU1NSIgZm9udC1zaXplPSIxMSIgZm9udC1mYW1pbHk9IkFyaWFsIj5IYW1idXJndWVyIOKAlCBEYWwgQ29tcGE8L3RleHQ+PC9zdmc+'">
+      <img class="snack-img" src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&q=70" alt="Hamburguer — Dal Compa" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEyMHB4IiBzdHlsZT0iYmFja2dyb3VuZDojMWUxZTI2Ij48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzU1NSIgZm9udC1zaXplPSIxMSIgZm9udC1mYW1pbHk9IkFyaWFsIj5IYW1idXJndWVyIOKAlCBEYWwgQ29tcGE8L3RleHQ+PC9zdmc+'">
       <div class="snack-body">
         <span class="snack-city">Roma</span>
-        <div class="snack-name">Hamburguer â€” Dal Compa</div>
-        <div class="snack-desc">Hamburguer artesanal com ingredientes locais.</div>
+        <div class="snack-name">Hamburguer — Dal Compa</div>
+        <div class="snack-desc">⚠️ Não encontrado em Roma — o único Dal Compa fica em Sorrento. Conferir de onde veio a dica.</div>
         <a class="map-link" href="https://maps.app.goo.gl/MHnW7YnEqmhJ3cSp6" target="_blank">Dal Compa, Roma</a>
       </div>
     </div>
@@ -667,7 +744,7 @@ footer{text-align:center;padding:2rem;color:var(--muted);font-size:.7rem;font-fa
       </div>
     </div>
   </div>
-  <div class="divider">Lanches â€” Milao</div>
+  <div class="divider">Lanches — Milao</div>
   <div class="card-grid">
     <div class="snack-card">
       <img class="snack-img" src="https://images.unsplash.com/photo-1511537190424-bbbab87ac5eb?w=400&q=70" alt="Starbucks Reserve Roastery" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEyMHB4IiBzdHlsZT0iYmFja2dyb3VuZDojMWUxZTI2Ij48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzU1NSIgZm9udC1zaXplPSIxMSIgZm9udC1mYW1pbHk9IkFyaWFsIj5TdGFyYnVja3MgUmVzZXJ2ZSBSb2FzdGVyeTwvdGV4dD48L3N2Zz4='">
@@ -679,7 +756,7 @@ footer{text-align:center;padding:2rem;color:var(--muted);font-size:.7rem;font-fa
       </div>
     </div>
   </div>
-  <div class="divider">Lanches â€” Florenca</div>
+  <div class="divider">Lanches — Florenca</div>
   <div class="card-grid">
     <div class="snack-card">
       <img class="snack-img" src="https://images.unsplash.com/photo-1555992336-03a23c7b20ee?w=400&q=70" alt="Mercado Central de Florenca" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEyMHB4IiBzdHlsZT0iYmFja2dyb3VuZDojMWUxZTI2Ij48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzU1NSIgZm9udC1zaXplPSIxMSIgZm9udC1mYW1pbHk9IkFyaWFsIj5NZXJjYWRvIENlbnRyYWwgZGUgRmxvcmVuY2E8L3RleHQ+PC9zdmc+'">
@@ -691,7 +768,7 @@ footer{text-align:center;padding:2rem;color:var(--muted);font-size:.7rem;font-fa
       </div>
     </div>
   </div>
-  <div class="divider">Lojas â€” Milao</div>
+  <div class="divider">Lojas — Milao</div>
   <div class="card-grid">
     <div class="snack-card">
       <img class="snack-img" src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=400&q=70" alt="Primark Milano" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEyMHB4IiBzdHlsZT0iYmFja2dyb3VuZDojMWUxZTI2Ij48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzU1NSIgZm9udC1zaXplPSIxMSIgZm9udC1mYW1pbHk9IkFyaWFsIj5QcmltYXJrIE1pbGFubzwvdGV4dD48L3N2Zz4='">
@@ -703,10 +780,10 @@ footer{text-align:center;padding:2rem;color:var(--muted);font-size:.7rem;font-fa
       </div>
     </div>
     <div class="snack-card">
-      <img class="snack-img" src="https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?w=400&q=70" alt="Zara â€” Via Torino (flagship)" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEyMHB4IiBzdHlsZT0iYmFja2dyb3VuZDojMWUxZTI2Ij48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzU1NSIgZm9udC1zaXplPSIxMSIgZm9udC1mYW1pbHk9IkFyaWFsIj5aYXJhIOKAlCBWaWEgVG9yaW5vIChmbGFnc2hpcCk8L3RleHQ+PC9zdmc+'">
+      <img class="snack-img" src="https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?w=400&q=70" alt="Zara — Via Torino (flagship)" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEyMHB4IiBzdHlsZT0iYmFja2dyb3VuZDojMWUxZTI2Ij48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzU1NSIgZm9udC1zaXplPSIxMSIgZm9udC1mYW1pbHk9IkFyaWFsIj5aYXJhIOKAlCBWaWEgVG9yaW5vIChmbGFnc2hpcCk8L3RleHQ+PC9zdmc+'">
       <div class="snack-body">
         <span class="snack-city">Milao</span>
-        <div class="snack-name">Zara â€” Via Torino (flagship)</div>
+        <div class="snack-name">Zara — Via Torino (flagship)</div>
         <div class="snack-desc">A maior Zara de Milao, varios andares, colecoes completas.</div>
         <a class="map-link" href="https://maps.app.goo.gl/sWJcHJFg5m5xqo9j9" target="_blank">Via Torino 10</a>
       </div>
@@ -742,57 +819,57 @@ footer{text-align:center;padding:2rem;color:var(--muted);font-size:.7rem;font-fa
 </div>
 
 <div id="atm" class="section">
-  <div class="city-header"><div class="city-emoji">ðŸ’³</div><div><h2>Wise ATM</h2><div class="dates">Caixas sem taxa</div></div></div>
-  <div class="info-box">Rede recomendada pela Wise na Italia: <strong>BNL (Banca Nazionale del Lavoro)</strong> 4 parte da Global ATM Alliance. Sem taxa adicional.</div>
-  <div class="info-box warn">Sempre escolha <strong>EUROQ“¼/strong> quando o caixa perguntar. Evite ATMs de aeroporto.</div>
+  <div class="city-header"><div class="city-emoji">💳</div><div><h2>Wise ATM</h2><div class="dates">Caixas sem taxa</div></div></div>
+  <div class="info-box">Rede recomendada pela Wise na Italia: <strong>BNL (Banca Nazionale del Lavoro)</strong> — parte da Global ATM Alliance. Sem taxa adicional.</div>
+  <div class="info-box warn">Sempre escolha <strong>EURO</strong> quando o caixa perguntar. Evite ATMs de aeroporto.</div>
   <div class="divider">Roma</div>
   <div class="atm-grid">
-    <div class="atm-card"><div class="atm-city">Roma</div><div class="atm-name">BNL 4 Piazza Venezia</div><div class="atm-addr">Perto do centro historico</div><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=BNL+Banca+Nazionale+del+Lavoro+Piazza+Venezia+Roma" target="_blank">Maps</a></div>
-    <div class="atm-card"><div class="atm-city">Roma</div><div class="atm-name">BNL â€” Via del Corso</div><div class="atm-addr">Eixo comercial central</div><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=BNL+Banca+Nazionale+del+Lavoro+Via+del+Corso+Roma" target="_blank">Maps</a></div>
+    <div class="atm-card"><div class="atm-city">Roma</div><div class="atm-name">BNL — Piazza Venezia</div><div class="atm-addr">Perto do centro historico</div><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=BNL+Banca+Nazionale+del+Lavoro+Piazza+Venezia+Roma" target="_blank">Maps</a></div>
+    <div class="atm-card"><div class="atm-city">Roma</div><div class="atm-name">BNL — Via del Corso</div><div class="atm-addr">Eixo comercial central</div><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=BNL+Banca+Nazionale+del+Lavoro+Via+del+Corso+Roma" target="_blank">Maps</a></div>
   </div>
   <div class="divider">Milao</div>
   <div class="atm-grid">
-    <div class="atm-card"><div class="atm-city">Milao</div><div class="atm-name">BNL â€” Piazza del Duomo</div><div class="atm-addr">Centro de Milao</div><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=BNL+Banca+Nazionale+del+Lavoro+Piazza+del+Duomo+Milano" target="_blank">Maps</a></div>
-    <div class="atm-card"><div class="atm-city">Milao</div><div class="atm-name">BNL â€” Corso Buenos Aires</div><div class="atm-addr">Eixo comercial principal</div><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=BNL+Banca+Nazionale+del+Lavoro+Corso+Buenos+Aires+Milano" target="_blank">Maps</a></div>
+    <div class="atm-card"><div class="atm-city">Milao</div><div class="atm-name">BNL — Piazza del Duomo</div><div class="atm-addr">Centro de Milao</div><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=BNL+Banca+Nazionale+del+Lavoro+Piazza+del+Duomo+Milano" target="_blank">Maps</a></div>
+    <div class="atm-card"><div class="atm-city">Milao</div><div class="atm-name">BNL — Corso Buenos Aires</div><div class="atm-addr">Eixo comercial principal</div><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=BNL+Banca+Nazionale+del+Lavoro+Corso+Buenos+Aires+Milano" target="_blank">Maps</a></div>
   </div>
   <div class="divider">Veneza</div>
   <div class="atm-grid">
-    <div class="atm-card"><div class="atm-city">Veneza</div><div class="atm-name">BNL â€” Rialto</div><div class="atm-addr">Proximo a Ponte di Rialto</div><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=BNL+Banca+Nazionale+del+Lavoro+Rialto+Venezia" target="_blank">Maps</a></div>
-    <div class="atm-card"><div class="atm-city">Veneza</div><div class="atm-name">BNL â€” Lista di Spagna</div><div class="atm-addr">Cannaregio, perto da hospedagem</div><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=BNL+Banca+Nazionale+del+Lavoro+Lista+di+Spagna+Venezia" target="_blank">Maps</a></div>
+    <div class="atm-card"><div class="atm-city">Veneza</div><div class="atm-name">BNL — Rialto</div><div class="atm-addr">Proximo a Ponte di Rialto</div><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=BNL+Banca+Nazionale+del+Lavoro+Rialto+Venezia" target="_blank">Maps</a></div>
+    <div class="atm-card"><div class="atm-city">Veneza</div><div class="atm-name">BNL — Lista di Spagna</div><div class="atm-addr">Cannaregio, perto da hospedagem</div><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=BNL+Banca+Nazionale+del+Lavoro+Lista+di+Spagna+Venezia" target="_blank">Maps</a></div>
   </div>
   <div class="divider">Florenca</div>
   <div class="atm-grid">
-    <div class="atm-card"><div class="atm-city">Florenca</div><div class="atm-name">BNL â€” Piazza della Repubblica</div><div class="atm-addr">Centro de Florenca</div><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=BNL+Banca+Nazionale+del+Lavoro+Piazza+della+Repubblica+Firenze" target="_blank">Maps</a></div>
+    <div class="atm-card"><div class="atm-city">Florenca</div><div class="atm-name">BNL — Piazza della Repubblica</div><div class="atm-addr">Centro de Florenca</div><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=BNL+Banca+Nazionale+del+Lavoro+Piazza+della+Repubblica+Firenze" target="_blank">Maps</a></div>
   </div>
 </div>
 
 <div id="docs" class="section">
-  <div class="city-header"><div class="city-emoji">ðŸ“„</div><div><h2>Documentos</h2><div class="dates">Clique para abrir o PDF</div></div></div>
+  <div class="city-header"><div class="city-emoji">📄</div><div><h2>Documentos</h2><div class="dates">Clique para abrir o PDF</div></div></div>
   <div class="divider">Trens</div>
   <div class="docs-grid">
-    <div class="doc-card"><div class="doc-icon">ðŸš†</div><div class="doc-name">Milao → Veneza</div><div class="doc-desc">20/11 · 12:35-15:03 · Cod. YYUJJY<br>Driellen / Fabricio / Antonio</div><a class="pdf-btn" href="pdfs/trem_milao_veneza_1.pdf" target="_blank">ðŸ“„ Abrir PDF</a></div>
-    <div class="doc-card"><div class="doc-icon">ðŸš†</div><div class="doc-name">Milao → Veneza</div><div class="doc-desc">20/11 · 12:35-15:03 · Cod. THM7JD<br>Suellen / Marcia / Maya</div><a class="pdf-btn" href="pdfs/trem_milao_veneza_2.pdf" target="_blank">ðŸ“„ Abrir PDF</a></div>
-    <div class="doc-card"><div class="doc-icon">ðŸš†</div><div class="doc-name">Florenca → Roma</div><div class="doc-desc">26/11 · 09:03-10:40 · Cod. X8K4QR<br>Driellen / Fabricio / Marcia / Antonio</div><a class="pdf-btn" href="pdfs/trem_florenca_roma_1.pdf" target="_blank">ðŸ“„ Abrir PDF</a></div>
+    <div class="doc-card"><div class="doc-icon">🚆</div><div class="doc-name">Milao → Veneza</div><div class="doc-desc">20/11 · 12:35-15:03 · Cod. YYUJJY<br>Driellen / Fabricio / Antonio</div><a class="pdf-btn" href="pdfs/trem_milao_veneza_1.pdf" target="_blank">📄 Abrir PDF</a></div>
+    <div class="doc-card"><div class="doc-icon">🚆</div><div class="doc-name">Milao → Veneza</div><div class="doc-desc">20/11 · 12:35-15:03 · Cod. THM7JD<br>Suellen / Marcia / Maya</div><a class="pdf-btn" href="pdfs/trem_milao_veneza_2.pdf" target="_blank">📄 Abrir PDF</a></div>
+    <div class="doc-card"><div class="doc-icon">🚆</div><div class="doc-name">Florenca → Roma</div><div class="doc-desc">26/11 · 09:03-10:40 · Cod. X8K4QR<br>Driellen / Fabricio / Marcia / Antonio</div><a class="pdf-btn" href="pdfs/trem_florenca_roma_1.pdf" target="_blank">📄 Abrir PDF</a></div>
   </div>
   <div class="divider">Ingressos</div>
   <div class="docs-grid">
-    <div class="doc-card"><div class="doc-icon">ðŸŽŸï¸</div><div class="doc-name">Coliseu + Foro Romano</div><div class="doc-desc">17/11 as 10:30 · Reserva OCO4986372<br>5x adulto + Maya gratuita</div><a class="pdf-btn" href="pdfs/ingresso_coliseu.pdf" target="_blank">ðŸ“„ Abrir PDF</a></div>
+    <div class="doc-card"><div class="doc-icon">🎟️</div><div class="doc-name">Coliseu + Foro Romano</div><div class="doc-desc">17/11 as 10:30 · Reserva OCO4986372<br>5x adulto + Maya gratuita</div><a class="pdf-btn" href="pdfs/ingresso_coliseu.pdf" target="_blank">📄 Abrir PDF</a></div>
   </div>
   <div class="divider">Hospedagens</div>
   <div class="docs-grid">
-    <div class="doc-card"><div class="doc-icon">ðŸ¨</div><div class="doc-name">Roma â€” Navona Harmony</div><div class="doc-desc">15-18/11 · Via degli Spagnoli 41</div><a class="pdf-btn" href="pdfs/hotel_roma_navona.pdf" target="_blank">ðŸ“„ Abrir PDF</a></div>
-    <div class="doc-card"><div class="doc-icon">ðŸ¨</div><div class="doc-name">Milao â€” Navigli</div><div class="doc-desc">18-20/11 · Corso di Porta Ticinese 46</div><a class="pdf-btn" href="pdfs/hotel_milao_navigli.pdf" target="_blank">ðŸ“„ Abrir PDF</a></div>
-    <div class="doc-card"><div class="doc-icon">ðŸ¨</div><div class="doc-name">Veneza â€” Guglie Bridge</div><div class="doc-desc">20-23/11 · Cannaregio 1376A</div><a class="pdf-btn" href="pdfs/hotel_veneza_guglie.pdf" target="_blank">ðŸ“„ Abrir PDF</a></div>
-    <div class="doc-card"><div class="doc-icon">ðŸ¨</div><div class="doc-name">Florenca â€” Palazzo Mannaioni</div><div class="doc-desc">23-26/11 · Via Maffia 9</div><a class="pdf-btn" href="pdfs/hotel_florenca_palazzo.pdf" target="_blank">ðŸ“„ Abrir PDF</a></div>
-    <div class="doc-card"><div class="doc-icon">ðŸ¨</div><div class="doc-name">Roma â€” Raeli Hotel Lazio</div><div class="doc-desc">26-27/11 · Via Vicenza 8 (Termini)</div><a class="pdf-btn" href="pdfs/hotel_roma_raeli.pdf" target="_blank">ðŸ“„ Abrir PDF</a></div>
+    <div class="doc-card"><div class="doc-icon">🏨</div><div class="doc-name">Roma — Navona Harmony</div><div class="doc-desc">15-18/11 · Via degli Spagnoli 41</div><a class="pdf-btn" href="pdfs/hotel_roma_navona.pdf" target="_blank">📄 Abrir PDF</a></div>
+    <div class="doc-card"><div class="doc-icon">🏨</div><div class="doc-name">Milao — Navigli</div><div class="doc-desc">18-20/11 · Corso di Porta Ticinese 46</div><a class="pdf-btn" href="pdfs/hotel_milao_navigli.pdf" target="_blank">📄 Abrir PDF</a></div>
+    <div class="doc-card"><div class="doc-icon">🏨</div><div class="doc-name">Veneza — Guglie Bridge</div><div class="doc-desc">20-23/11 · Cannaregio 1376A</div><a class="pdf-btn" href="pdfs/hotel_veneza_guglie.pdf" target="_blank">📄 Abrir PDF</a></div>
+    <div class="doc-card"><div class="doc-icon">🏨</div><div class="doc-name">Florenca — Palazzo Mannaioni</div><div class="doc-desc">23-26/11 · Via Maffia 9</div><a class="pdf-btn" href="pdfs/hotel_florenca_palazzo.pdf" target="_blank">📄 Abrir PDF</a></div>
+    <div class="doc-card"><div class="doc-icon">🏨</div><div class="doc-name">Roma — Raeli Hotel Lazio</div><div class="doc-desc">26-27/11 · Via Vicenza 8 (Termini)</div><a class="pdf-btn" href="pdfs/hotel_roma_raeli.pdf" target="_blank">📄 Abrir PDF</a></div>
   </div>
-  <div class="divider">Seguro Viagem â€” AIG Mastercard Black</div>
+  <div class="divider">Seguro Viagem — AIG Mastercard Black</div>
   <div class="info-box tip">Todos os seguros cobrem viagem internacional, inclusive Italia (Zona Schengen). Validos ate 60 dias por viagem. Cobertura medica USD 175.000 + traslado USD 100.000.</div>
   <div class="docs-grid">
-    <div class="doc-card"><div class="doc-icon">ðŸ›¡ï¸</div><div class="doc-name">Driellen</div><div class="doc-desc">Bilhete 16023-0002-69-260407987<br>Conceicao Satyro de Moraes<br>Validade: 09/06/2026 â€” 09/06/2027</div><a class="pdf-btn" href="pdfs/seguro_viagem.pdf" target="_blank">ðŸ“„ Seguro PDF</a><a class="pdf-btn" href="pdfs/certificado_seguro.pdf" target="_blank">ðŸ“„ Certificado PDF</a></div>
-    <div class="doc-card"><div class="doc-icon">ðŸ›¡ï¸</div><div class="doc-name">Fabricio</div><div class="doc-desc">Bilhete 16023-0002-69-260407988<br>Fabricio Santos de Vasconcellos<br>Validade: 09/06/2026 â€” 09/06/2027</div><a class="pdf-btn" href="pdfs/seguro_fabricio.pdf" target="_blank">ðŸ“„ Seguro PDF</a><a class="pdf-btn" href="pdfs/cert_fabricio.pdf" target="_blank">ðŸ“„ Certificado PDF</a></div>
-    <div class="doc-card"><div class="doc-icon">ðŸ›¡ï¸</div><div class="doc-name">Marcia</div><div class="doc-desc">Bilhete 16023-0003-69-260167690<br>Marcia Conceicao Satyro de Moraes<br>Validade: 25/10/2026 â€” 25/10/2027</div><a class="pdf-btn" href="pdfs/seguro_marcia.pdf" target="_blank">ðŸ“„ Seguro PDF</a><a class="pdf-btn" href="pdfs/cert_marcia.pdf" target="_blank">ðŸ“„ Certificado PDF</a></div>
-    <div class="doc-card"><div class="doc-icon">ðŸ›¡ï¸</div><div class="doc-name">Antonio Claudio</div><div class="doc-desc">Bilhete 16023-0002-69-260407990<br>Antonio Claudio Freire Lima<br>Validade: 09/06/2026 â€” 09/06/2027</div><a class="pdf-btn" href="pdfs/seguro_antonio.pdf" target="_blank">ðŸ“„ Seguro PDF</a><a class="pdf-btn" href="pdfs/cert_antonio.pdf" target="_blank">ðŸ“„ Certificado PDF</a></div>
+    <div class="doc-card"><div class="doc-icon">🛡️</div><div class="doc-name">Driellen</div><div class="doc-desc">Bilhete 16023-0002-69-260407987<br>Conceicao Satyro de Moraes<br>Validade: 09/06/2026 — 09/06/2027</div><a class="pdf-btn" href="pdfs/seguro_viagem.pdf" target="_blank">📄 Seguro PDF</a><a class="pdf-btn" href="pdfs/certificado_seguro.pdf" target="_blank">📄 Certificado PDF</a></div>
+    <div class="doc-card"><div class="doc-icon">🛡️</div><div class="doc-name">Fabricio</div><div class="doc-desc">Bilhete 16023-0002-69-260407988<br>Fabricio Santos de Vasconcellos<br>Validade: 09/06/2026 — 09/06/2027</div><a class="pdf-btn" href="pdfs/seguro_fabricio.pdf" target="_blank">📄 Seguro PDF</a><a class="pdf-btn" href="pdfs/cert_fabricio.pdf" target="_blank">📄 Certificado PDF</a></div>
+    <div class="doc-card"><div class="doc-icon">🛡️</div><div class="doc-name">Marcia</div><div class="doc-desc">Bilhete 16023-0003-69-260167690<br>Marcia Conceicao Satyro de Moraes<br>Validade: 25/10/2026 — 25/10/2027</div><a class="pdf-btn" href="pdfs/seguro_marcia.pdf" target="_blank">📄 Seguro PDF</a><a class="pdf-btn" href="pdfs/cert_marcia.pdf" target="_blank">📄 Certificado PDF</a></div>
+    <div class="doc-card"><div class="doc-icon">🛡️</div><div class="doc-name">Antonio Claudio</div><div class="doc-desc">Bilhete 16023-0002-69-260407990<br>Antonio Claudio Freire Lima<br>Validade: 09/06/2026 — 09/06/2027</div><a class="pdf-btn" href="pdfs/seguro_antonio.pdf" target="_blank">📄 Seguro PDF</a><a class="pdf-btn" href="pdfs/cert_antonio.pdf" target="_blank">📄 Certificado PDF</a></div>
   </div>
   <div class="info-box warn">Suellen e Maya: verificar se possuem seguro viagem proprio ou se estao cobertas por outro titular.</div>
 </div>
